@@ -1,188 +1,413 @@
-default = {
-	MVLV_TSF_classis_0 = {
-		pool = {
-			icons = {
-				"GFX_战术机原型"
-			}
-			models = {
-				"TSF_entity"
-			}
-			weight = 100
-		}
-	}
+UNI = {
 	MVLV_TSF_classis_1_light = {
 		pool = {
-			icons = {
-				"GFX_F-5"
-			}
 			models = {
-				"TSF_entity"
+				UNI_MVLV_tsf_battalion_1_entity
 			}
-			weight = 100
 		}
 	}
 	MVLV_TSF_classis_1_heavy = {
 		pool = {
-			icons = {
-				"GFX_F-4"
-			}
 			models = {
-				"TSF_entity"
+				UNI_MVLV_tsf_battalion_2_entity
 			}
-			weight = 100
 		}
 	}
 	MVLV_TSF_classis_2_light_normal = {
 		pool = {
-			icons = {
-				"GFX_F-16"
-				"GFX_F-18"
-			}
 			models = {
-				"TSF_entity"
+				UNI_MVLV_tsf_battalion_3_entity
 			}
-			weight = 100
-		}
-	}
-	MVLV_TSF_classis_2_light_high_mobility = {
-		pool = {
-			icons = {
-				"GFX_97式吹雪"
-				"GFX_歼10X"
-			}
-			models = {
-				"TSF_entity"
-			}
-			weight = 100
 		}
 	}
 	MVLV_TSF_classis_2_heavy_normal = {
 		pool = {
-			icons = {
-				"GFX_F-14"
-				"GFX_F-15"
-			}
 			models = {
-				"TSF_entity"
+				UNI_MVLV_tsf_battalion_4_entity
 			}
-			weight = 100
+		}
+	}
+	MVLV_TSF_classis_2_light_high_mobility = {
+		pool = {
+			models = {
+				UNI_MVLV_tsf_battalion_5_entity
+			}
 		}
 	}
 	MVLV_TSF_classis_2_heavy_high_mobility = {
 		pool = {
-			icons = {
-				"GFX_94式不知火"
-			}
 			models = {
-				"TSF_entity"
+				UNI_MVLV_tsf_battalion_6_entity
 			}
-			weight = 100
 		}
 	}
-	MVLV_TSF_classis_3_light_normal = {
+	# MVLV_TSF_classis_3_light_normal
+	# MVLV_TSF_classis_3_heavy_normal
+	# MVLV_TSF_classis_3_light_high_mobility
+	# MVLV_TSF_classis_3_heavy_high_mobility
+	# MVLV_TSF_classis_3_light_normal_stealth
+	# MVLV_TSF_classis_3_heavy_normal_stealth
+	# MVLV_TSF_classis_3_light_high_mobility_stealth
+	# MVLV_TSF_classis_3_heavy_high_mobility_stealth
+	# MVLV_TSF_classis_4
+}
+
+USA = {
+	MVLV_TSF_classis_1_light = {
 		pool = {
-			icons = {
-				"GFX_JAS-39"
-			}
 			models = {
-				"TSF_entity"
+				USA_MVLV_tsf_battalion_1_entity
 			}
-			weight = 100
 		}
 	}
-	MVLV_TSF_classis_3_light_high_mobility = {
+	MVLV_TSF_classis_1_heavy = {
 		pool = {
-			icons = {
-				"GFX_JAS-39"
-			}
 			models = {
-				"TSF_entity"
+				USA_MVLV_tsf_battalion_2_entity
 			}
-			weight = 100
 		}
 	}
-	MVLV_TSF_classis_3_heavy_normal = {
+	MVLV_TSF_classis_2_light_normal = {
 		pool = {
-			icons = {
-				"GFX_Su-47"
-				"GFX_Rafale阵风"
-			}
 			models = {
-				"TSF_entity"
+				USA_MVLV_tsf_battalion_3_entity
 			}
-			weight = 100
 		}
 	}
-	MVLV_TSF_classis_3_heavy_high_mobility = {
+	MVLV_TSF_classis_2_heavy_normal = {
 		pool = {
-			icons = {
-				"GFX_Su-57"
-				"GFX_歼20"
-				"GFX_Tempest暴风"
-			}
 			models = {
-				"TSF_entity"
+				USA_MVLV_tsf_battalion_4_entity
 			}
-			weight = 100
 		}
 	}
-	MVLV_TSF_classis_3_light_normal_stealth = {
+	MVLV_TSF_classis_2_light_high_mobility = {
 		pool = {
-			icons = {
-				"GFX_F-35"
-			}
 			models = {
-				"TSF_entity"
+				USA_MVLV_tsf_battalion_5_entity
 			}
-			weight = 100
 		}
 	}
-	MVLV_TSF_classis_3_light_high_mobility_stealth = {
+	MVLV_TSF_classis_2_heavy_high_mobility = {
 		pool = {
-			icons = {
-				"GFX_SW"
-			}
 			models = {
-				"TSF_entity"
+				USA_MVLV_tsf_battalion_6_entity
 			}
-			weight = 100
 		}
 	}
-	MVLV_TSF_classis_3_heavy_normal_stealth = {
+}
+
+GEU = {
+	MVLV_TSF_classis_1_light = {
 		pool = {
-			icons = {
-				"GFX_F-22"
-				"GFX_Su-47"
-			}
 			models = {
-				"TSF_entity"
+				GEU_MVLV_tsf_battalion_1_entity
 			}
-			weight = 100
 		}
 	}
-	MVLV_TSF_classis_3_heavy_high_mobility_stealth = {
+	MVLV_TSF_classis_1_heavy = {
 		pool = {
-			icons = {
-				"GFX_YF-23"
-				"GFX_Su-57"
-				"GFX_歼20"
-			}
 			models = {
-				"TSF_entity"
+				GEU_MVLV_tsf_battalion_2_entity
 			}
-			weight = 100
 		}
 	}
-	MVLV_TSF_classis_4 = {
+	MVLV_TSF_classis_2_light_normal = {
 		pool = {
-			icons = {
-				"GFX_XF-2000A"
-				"GFX_Me-101P"
-			}
 			models = {
-				"TSF_entity"
+				GEU_MVLV_tsf_battalion_3_entity
 			}
-			weight = 100
+		}
+	}
+	MVLV_TSF_classis_2_heavy_normal = {
+		pool = {
+			models = {
+				GEU_MVLV_tsf_battalion_4_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_light_high_mobility = {
+		pool = {
+			models = {
+				GEU_MVLV_tsf_battalion_5_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_heavy_high_mobility = {
+		pool = {
+			models = {
+				GEU_MVLV_tsf_battalion_6_entity
+			}
+		}
+	}
+}
+
+AFR = {
+	MVLV_TSF_classis_1_light = {
+		pool = {
+			models = {
+				AFR_MVLV_tsf_battalion_1_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_1_heavy = {
+		pool = {
+			models = {
+				AFR_MVLV_tsf_battalion_2_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_light_normal = {
+		pool = {
+			models = {
+				AFR_MVLV_tsf_battalion_3_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_heavy_normal = {
+		pool = {
+			models = {
+				AFR_MVLV_tsf_battalion_4_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_light_high_mobility = {
+		pool = {
+			models = {
+				AFR_MVLV_tsf_battalion_5_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_heavy_high_mobility = {
+		pool = {
+			models = {
+				AFR_MVLV_tsf_battalion_6_entity
+			}
+		}
+	}
+}
+
+JAP = {
+	MVLV_TSF_classis_1_light = {
+		pool = {
+			models = {
+				JAP_MVLV_tsf_battalion_1_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_1_heavy = {
+		pool = {
+			models = {
+				JAP_MVLV_tsf_battalion_2_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_light_normal = {
+		pool = {
+			models = {
+				JAP_MVLV_tsf_battalion_3_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_heavy_normal = {
+		pool = {
+			models = {
+				JAP_MVLV_tsf_battalion_4_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_light_high_mobility = {
+		pool = {
+			models = {
+				JAP_MVLV_tsf_battalion_5_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_heavy_high_mobility = {
+		pool = {
+			models = {
+				JAP_MVLV_tsf_battalion_6_entity
+			}
+		}
+	}
+}
+
+EUR = {
+	MVLV_TSF_classis_1_light = {
+		pool = {
+			models = {
+				EUR_MVLV_tsf_battalion_1_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_1_heavy = {
+		pool = {
+			models = {
+				EUR_MVLV_tsf_battalion_2_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_light_normal = {
+		pool = {
+			models = {
+				EUR_MVLV_tsf_battalion_3_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_heavy_normal = {
+		pool = {
+			models = {
+				EUR_MVLV_tsf_battalion_4_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_light_high_mobility = {
+		pool = {
+			models = {
+				EUR_MVLV_tsf_battalion_5_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_heavy_high_mobility = {
+		pool = {
+			models = {
+				EUR_MVLV_tsf_battalion_6_entity
+			}
+		}
+	}
+}
+
+SOV = {
+	MVLV_TSF_classis_1_light = {
+		pool = {
+			models = {
+				SOV_MVLV_tsf_battalion_1_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_1_heavy = {
+		pool = {
+			models = {
+				SOV_MVLV_tsf_battalion_2_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_light_normal = {
+		pool = {
+			models = {
+				SOV_MVLV_tsf_battalion_3_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_heavy_normal = {
+		pool = {
+			models = {
+				SOV_MVLV_tsf_battalion_4_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_light_high_mobility = {
+		pool = {
+			models = {
+				SOV_MVLV_tsf_battalion_5_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_heavy_high_mobility = {
+		pool = {
+			models = {
+				SOV_MVLV_tsf_battalion_6_entity
+			}
+		}
+	}
+}
+
+CHI = {
+	MVLV_TSF_classis_1_light = {
+		pool = {
+			models = {
+				CHI_MVLV_tsf_battalion_1_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_1_heavy = {
+		pool = {
+			models = {
+				CHI_MVLV_tsf_battalion_2_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_light_normal = {
+		pool = {
+			models = {
+				CHI_MVLV_tsf_battalion_3_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_heavy_normal = {
+		pool = {
+			models = {
+				CHI_MVLV_tsf_battalion_4_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_light_high_mobility = {
+		pool = {
+			models = {
+				CHI_MVLV_tsf_battalion_5_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_heavy_high_mobility = {
+		pool = {
+			models = {
+				CHI_MVLV_tsf_battalion_6_entity
+			}
+		}
+	}
+}
+
+EEA = {
+	MVLV_TSF_classis_1_light = {
+		pool = {
+			models = {
+				EEA_MVLV_tsf_battalion_1_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_1_heavy = {
+		pool = {
+			models = {
+				EEA_MVLV_tsf_battalion_2_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_light_normal = {
+		pool = {
+			models = {
+				EEA_MVLV_tsf_battalion_3_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_heavy_normal = {
+		pool = {
+			models = {
+				EEA_MVLV_tsf_battalion_4_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_light_high_mobility = {
+		pool = {
+			models = {
+				EEA_MVLV_tsf_battalion_5_entity
+			}
+		}
+	}
+	MVLV_TSF_classis_2_heavy_high_mobility = {
+		pool = {
+			models = {
+				EEA_MVLV_tsf_battalion_6_entity
+			}
 		}
 	}
 }

@@ -1,0 +1,24 @@
+objectTypes = {
+
+############## 坦克及 #############
+	pdxmesh = {
+		name = "Beta_Tank_pdx"
+		file = "gfx/models/units/beta/Beta_Tank.mesh"
+
+		animation = { id = "Idle"	type = "Beta_Tank_Idle_animation"}
+		animation = { id = "Move"	type = "Beta_Tank_Move_animation"}
+	}
+
+
+############## 坦克及 #############
+	pdxmesh = {
+		name = "Beta_Grappler_pdx"
+		file = "gfx/models/units/beta/Beta_Grappler.mesh"
+
+		animation = { id = "Idle"	type = "Beta_Grappler_Idle_animation"}
+		animation = { id = "Move"	type = "Beta_Grappler_Walk_animation"}
+		animation = { id = "Attack1"	type = "Beta_Grappler_Attack1_animation"}
+		animation = { id = "Attack2"	type = "Beta_Grappler_Attack2_animation"}
+	}
+
+}
