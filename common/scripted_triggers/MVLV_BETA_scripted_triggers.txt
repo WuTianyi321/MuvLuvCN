@@ -5,7 +5,6 @@ BETA前线巢穴 = {
 }
 
 BETA陆军数量到达出兵上限 = {
-	
 }
 
 BETA陆军数量未到达当前巢穴等级上限 = {
@@ -22,7 +21,7 @@ BETA陆军数量未到达当前巢穴等级上限 = {
 BETA陆军数量已到达当前巢穴等级上限 = {
 	BETA陆军数量未到达当前巢穴等级上限 = no
 }
-  
+
 BETA陆军数量未到达当前巢穴等级小侵攻限度 = {
 	OR = {
 		check_variable = {
@@ -33,6 +32,7 @@ BETA陆军数量未到达当前巢穴等级小侵攻限度 = {
 		}
 	}
 }
+
 # BETA光线级数量未到达当前巢穴等级上限 = {
 # 	OR = {
 # 		has_equipment = {
@@ -385,9 +385,15 @@ BETA后续部队可通过地下进入阿拉斯加 = {
 		}
 	}
 }
+
 索马里兰可地下侵攻 = {
-	OR={293 = {is_controlled_by = from}
-                        659 = {is_controlled_by = from}
+	OR = {
+		293 = {
+			is_controlled_by = from
+		}
+		659 = {
+			is_controlled_by = from
+		}
 	}
 	268 = {
 		is_controlled_by = AFR
@@ -396,8 +402,19 @@ BETA后续部队可通过地下进入阿拉斯加 = {
 		has_idea = mvlv_brokenhive
 	}
 	# BETA陆军数量未到达当前巢穴等级上限 = no
-	# BETA陆军数量低于地下侵攻上限 = yes	
-	AFR = {is_ai = no}
+	BETA陆军数量低于地下侵攻上限 = yes	
+	# AFR = {
+	# 	is_ai = no
+	# }
+	OR = {
+		地狱难度 = yes
+		and = {
+			困难难度 = yes
+			AFR = {
+				is_ai = no
+			}
+		}
+	}
 }
 
 #BETA后续部队可通过地下进入索马里兰 = {
@@ -412,15 +429,23 @@ BETA后续部队可通过地下进入阿拉斯加 = {
 #	NOT = {
 #		has_idea = mvlv_brokenhive
 #	}
-	# BETA陆军数量低于地下侵攻上限 = yes
-	
+# BETA陆军数量低于地下侵攻上限 = yes
 #	AFR = {is_ai = no}
 #}
 海南可地下侵攻 = {
-	OR={592 = {is_controlled_by = from}
-              		594 = {is_controlled_by = from}
-		671 = {is_controlled_by = from}
-		728 = {is_controlled_by = from}
+	OR = {
+		592 = {
+			is_controlled_by = from
+		}
+		594 = {
+			is_controlled_by = from
+		}
+		671 = {
+			is_controlled_by = from
+		}
+		728 = {
+			is_controlled_by = from
+		}
 	}
 	591 = {
 		is_controlled_by = CHI
@@ -429,8 +454,19 @@ BETA后续部队可通过地下进入阿拉斯加 = {
 		has_idea = mvlv_brokenhive
 	}
 	# BETA陆军数量未到达当前巢穴等级上限 = no
-	# BETA陆军数量低于地下侵攻上限 = yes
-	CHI = {is_ai = no}
+	BETA陆军数量低于地下侵攻上限 = yes
+	# CHI = {
+	# 	is_ai = no
+	# }
+	OR = {
+		地狱难度 = yes
+		and = {
+			困难难度 = yes
+			CHI = {
+				is_ai = no
+			}
+		}
+	}
 }
 
 #BETA后续部队可通过地下进入海南 = {
