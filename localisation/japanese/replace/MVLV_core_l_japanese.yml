@@ -1,0 +1,28 @@
+﻿l_japanese:
+ NUCLEAR_BOMB:0 "G弾"
+ NUCLEAR_PRODUCTION_ETA:0 "次のG弾は生産が $PROGRESS|1G%$ 進んでいます。 およそ $DAYS|G$ 日後に準備が完了します。 "
+ NUCLEAR_PRODUCTION_NONE:0 "現在我が国はG弾を生産していません。 "
+ CAN_USE_ROCKET_SITES_FOR_NUKES:0 "G弾のためのロケットを使用することができる。 "
+ NUKE_BUTTON_CLICK:0 "§Gクリック§!でG弾を投下"
+ NUKE_BUTTON_NUKES:0 "我々がG弾を保有"
+
+  PRODUCTION_MATERIALS_RUBBER:0 "G元素"
+  state_resource_rubber:0 "G元素"
+  temporary_state_resource_rubber:0 "G元素"
+  country_resource_rubber:0 "G元素"
+  state_resource_cost_rubber:0 "G元素消費"
+  country_resource_cost_rubber:0 "G元素消費"
+  sabotage_rubber:0 "G元素資源への妨害工作"
+  rubber_desc:0 "BETAが製造する特殊な物質。 様々な特殊物理効果を持ち、少なくとも11種類のG元素が存在すると推測されていて、BETAの光線級と重光線級の製造や、人類側ではG元素を基に開発された技術の製品の製造に使用されている。"
+
+  group_tsf_title:0 "戦術機部隊"
+  modifier_army_sub_unit_category_MVLV_tsf_attack_factor:0 "戦術機部隊攻撃"
+  modifier_army_sub_unit_category_MVLV_tsf_defence_factor:0 "戦術機部隊防御"
+  modifier_army_sub_unit_category_MVLV_tsf_speed_factor:0 "戦術機部隊速度"
+  modifier_army_sub_unit_category_MVLV_tsf_max_org_factor:0 "戦術機部隊編成"
+
+  group_xg_title:0 "戦略航空機動要塞"
+  modifier_army_sub_unit_category_MVLV_xg_attack_factor:0 "戦略航空機動要塞攻撃"
+  modifier_army_sub_unit_category_MVLV_xg_defence_factor:0 "戦略航空機動要塞防御"
+  modifier_army_sub_unit_category_MVLV_xg_speed_factor:0 "戦略航空機動要塞速度"
+  modifier_army_sub_unit_category_MVLV_xg_max_org_factor:0 "戦略航空機動要塞編成"
