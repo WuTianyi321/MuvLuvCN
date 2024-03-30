@@ -1775,6 +1775,9 @@ country_event = {
 		set_variable = {
 			THIS.var_exists_h01 = 0
 		}
+		set_variable = {
+			THIS.var_exists_human = 0
+		}
 		#残存巢穴から
 		every_country = {
 			if = {
