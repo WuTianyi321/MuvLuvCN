@@ -347,14 +347,14 @@ entity = {
 #	}
 }
 
-entity = {
-	name = "GEU_tsf_entity"
-	pdxmesh = "GEU_Tsf_F4"
-	scale = 1.2
-}
+# entity = {
+# 	name = "GEU_tsf_entity"
+# 	pdxmesh = "GEU_Tsf_F4"
+# 	scale = 1.2
+# }
 
-entity = {
-	name = "AFR_tsf_entity"
-	pdxmesh = "AFR_Tsf_F4"
-	scale = 1.2
-}
+# entity = {
+# 	name = "AFR_tsf_entity"
+# 	pdxmesh = "AFR_Tsf_F4"
+# 	scale = 1.2
+# }
