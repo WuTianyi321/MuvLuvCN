@@ -1,5 +1,6 @@
 entity = {
-	name = "ruitare_entity"
+	# name = "ruitare_entity"
+	name = "MVLV_beta_destroyer_entity"
 	pdxmesh = "BetaRuitare_mesh"
 	scale = 1.15
 }

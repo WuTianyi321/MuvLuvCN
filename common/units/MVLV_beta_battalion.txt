@@ -305,7 +305,7 @@ sub_units = {
 		}
 	}
 	MVLV_beta_destroyer = {
-		sprite = "ruitare"
+		sprite = infantry
 		map_icon_category = infantry
 		priority = 610
 		ai_priority = 210
