@@ -26,3 +26,21 @@ animation = {
 	name = "Beta_Grappler_Attack2_animation"
 	file = "Beta_Grappler_Attack2.anim"
 }
+
+#突击级
+animation = {
+	name = "Beta_Destroyer_Idle_animation"
+	file = "Beta_Destroyer_Idle.anim"
+}
+animation = {
+	name = "Beta_Destroyer_Walk_animation"
+	file = "Beta_Destroyer_Walk.anim"
+}
+animation = {
+	name = "Beta_Destroyer_FastMove_animation"
+	file = "Beta_Destroyer_FastMove.anim"
+}
+animation = {
+	name = "Beta_Destroyer_Charge_animation"
+	file = "Beta_Destroyer_Charge.anim"
+}
