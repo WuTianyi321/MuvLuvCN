@@ -734,6 +734,7 @@ recruit_character = JAP_unit_leader_20
 recruit_character = JAP_unit_leader_21
 recruit_character = JAP_unit_leader_22
 recruit_character = JAP_unit_leader_23
+recruit_character = JAP_unit_leader_24
 ###初期将军及び元帥を定義###
 #create_corps_commander = {
 #	name = "真壁清十郎"	#Toshizo
