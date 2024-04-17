@@ -1,0 +1,4 @@
+﻿l_english:
+  AIRWING_MISSION_TYPE_DROP_NUKE:0 "G-Bomb Strike"
+  AIRWING_MISSION_TYPE_DROP_NUKE_DESC:0 "This mission will execute a G-Bomb strike."
+  AIRWING_MISSION_TYPE_DROP_NUKE_DISABLED_DESC:0 "§RThere aren't enough§!G-Bombs to execute the strike!"

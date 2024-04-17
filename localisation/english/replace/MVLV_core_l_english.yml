@@ -1,0 +1,28 @@
+﻿l_english:
+  NUCLEAR_BOMB:0 "G-Bomb"
+  NUCLEAR_PRODUCTION_ETA:0 "The next G-Bomb is $PROGRESS|1G%$ complete, and will be completed in $DAYS|G$ days."
+  NUCLEAR_PRODUCTION_NONE:0 "There are no G-Bombs being produced."
+  CAN_USE_ROCKET_SITES_FOR_NUKES:0 "Rocket Sites can be used for G-Bombs."
+  NUKE_BUTTON_CLICK:0 "§G-Bomb§!Drop a G-Bomb"
+  NUKE_BUTTON_NUKES:0 "We have a G-Bomb"
+
+  PRODUCTION_MATERIALS_RUBBER:0 "G-Element"
+  state_resource_rubber:0 "G-Element"
+  temporary_state_resource_rubber:0 "G-Element"
+  country_resource_rubber:0 "G-Element"
+  state_resource_cost_rubber:0 "G-Element Consumption"
+  country_resource_cost_rubber:0 "G-Element Consumption"
+  sabotage_rubber:0 "Destruction of G-Element production"
+  rubber_desc:0 "Reality-defying materials created by the BETA, presumably to be sent back to their Creators. It has a variety of physical effects and is speculated to have at least 11 different types, which are used in the production of Laser and Heavy Laser classes."
+
+  group_tsf_title:0 "Tactical Surface Fighter"
+  modifier_army_sub_unit_category_MVLV_tsf_attack_factor:0 "TSF Attack"
+  modifier_army_sub_unit_category_MVLV_tsf_defence_factor:0 "TSF Defense"
+  modifier_army_sub_unit_category_MVLV_tsf_speed_factor:0 "TSF Speed"
+  modifier_army_sub_unit_category_MVLV_tsf_max_org_factor:0 "TSF Organization"
+
+  group_xg_title:0 "High-Maneuver Aeronautic Fortress"
+  modifier_army_sub_unit_category_MVLV_xg_attack_factor:0 "HI-MAERF Attack"
+  modifier_army_sub_unit_category_MVLV_xg_defence_factor:0 "HI-MAERF Defense"
+  modifier_army_sub_unit_category_MVLV_xg_speed_factor:0 "HI-MAERF Speed"
+  modifier_army_sub_unit_category_MVLV_xg_max_org_factor:0 "HI-MAERF Organization"
