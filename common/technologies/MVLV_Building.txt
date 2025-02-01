@@ -2,8 +2,10 @@ technologies = {
 	MVLV_EnableBuilding_ammunition_plant = {
 		start_year = 1973
 		research_cost = 100
+		
 		categories = {
 		}
+		
 		enable_building = {
 			building = ammunition_plant
 			level = 5
@@ -12,31 +14,51 @@ technologies = {
 	MVLV_EnableBuilding_ammunition_silo = {
 		start_year = 1973
 		research_cost = 100
+		
 		categories = {
 		}
+		
 		enable_building = {
 			building = ammunition_silo
 			level = 5
 		}
 	}
+	MVLV_EnableBuilding_rocket_site = {
+		start_year = 1973
+		research_cost = 100
+		
+		categories = {
+		}
+		
+		enable_building = {
+			building = rocket_site
+			level = 3
+		}
+	}
+}
 	MVLV_EnableBuilding_arms_factory = {
 		start_year = 1973
 		research_cost = 100
+		
 		categories = {
 		}
+		
 		enable_building = {
 			building = arms_factory
-			level = 300
+			level = 40
 		}
 	}
+	
 	MVLV_EnableBuilding_industrial_complex = {
 		start_year = 1973
 		research_cost = 100
+		
 		categories = {
 		}
+		
 		enable_building = {
 			building = industrial_complex
-			level = 300
+			level = 40
 		}
 	}
 }

@@ -56,7 +56,6 @@ NDefines.NMilitary.WAR_SCORE_LEND_LEASE_GIVEN_FUEL_FACTOR = 0.003 			-- war scor
 NDefines.NMilitary.WAR_SCORE_LEND_LEASE_RECEIVED_IC_FACTOR = 0.002  			-- war score deducted for every IC of lend lease received from allies
 NDefines.NMilitary.WAR_SCORE_LEND_LEASE_RECEIVED_FUEL_FACTOR = 0.002 		-- war score deducted for every 100 units of fuel lend lease received from allies
 NDefines.NMilitary.RELIABILTY_RECOVERY = 0.01
-NDefines.NMilitary.NUKE_MIN_DAMAGE_PERCENT = 0.5
 NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = false -- 线性经验
 NDefines.NMilitary.UNIT_LEADER_TRAIT_SLOT_PER_LEVEL = { 1.0, 1.0, 1.0, 0.0, } --将领特质槽
 
@@ -83,10 +82,6 @@ NDefines.NMilitary.PLAN_CONSIDERED_GOOD = 0.4 -- Plan evaluations above this val
 NDefines.NMilitary.PLAN_CONSIDERED_BAD = -0.4 -- Plan evaluations below this value are considered unsafe
 NDefines.NMilitary.PLAN_NEIGHBORING_ENEMY_PROVINCE_FACTOR = 10 -- When calculating the importance of provinces, it takes number of enemy provinces into account, factored by this
 NDefines.NMilitary.PLAN_PROVINCE_BASE_IMPORTANCE = 1 -- Used when calculating the calue of front and defense area provinces for the battle plan system
-NDefines.NMilitary.PLAN_PROVINCE_MEDIUM_VP_IMPORTANCE_AREA = 1 -- Used when calculating the value of defense area in the battle plan system
-NDefines.NMilitary.PLAN_PROVINCE_HIGH_VP_IMPORTANCE_AREA = 2 -- Used when calculating the value of defense area in the battle plan system
-NDefines.NMilitary.PLAN_PROVINCE_MEDIUM_VP_IMPORTANCE_FRONT = 15 -- Used when calculating the calue of fronts in the battle plan system
-NDefines.NMilitary.PLAN_PROVINCE_MEDIUM_VP_IMPORTANCE_FRONT = 30 -- Used when calculating the calue of fronts in the battle plan system
 NDefines.NMilitary.PLAN_AREA_DEFENSE_ENEMY_CONTROLLER_SCORE = 2 -- Score applied to provinces in the defense area order controlled by enemies
 NDefines.NMilitary.PLAN_AREA_DEFENSE_ENEMY_UNIT_FACTOR = 2 -- Factor applied to province score in area defense order per enemy unit in that province
 NDefines.NMilitary.PLAN_AREA_DEFENSE_FORT_IMPORTANCE = 30 -- Used when calculating the calue of defense area provinces for the battle plan system, works as multipliers on the rest
@@ -106,6 +101,13 @@ NDefines.NMilitary.MIN_SUPPLY_CONSUMPTION=0.001
 -- NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.4
 NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.2
 NDefines.NMilitary.COMBAT_STACKING_START = 1000
+NDefines.NMilitary.PLAN_PROVINCE_LOW_VP_DEFENSE_THRESHOLD = 2.0      -- For area defense VP orders, what are the thresholds for "low", "medium" and "high" VP values
+NDefines.NMilitary.PLAN_PROVINCE_MEDIUM_VP_DEFENSE_THRESHOLD = 8.0   -- see above
+NDefines.NMilitary.PLAN_PROVINCE_HIGH_VP_DEFENSE_THRESHOLD = 25.0    -- see above
+NDefines.NMilitary.PLAN_PROVINCE_LOW_VP_DEFENSE_IMPORTANCE = 2.0     -- For area defense VP orders, use this value for relative importance
+NDefines.NMilitary.PLAN_PROVINCE_MEDIUM_VP_DEFENSE_IMPORTANCE = 5.0  -- see above
+NDefines.NMilitary.PLAN_PROVINCE_HIGH_VP_DEFENSE_IMPORTANCE = 10.0   -- see above
+NDefines.NMilitary.PLAN_PROVINCE_CAPITAL_DEFENSE_IMPORTANCE = 50.0   -- For area defense VP orders, boost importance value with this if it's the capital
 --____________________________________________________________
 
 --NProduction
@@ -137,7 +139,6 @@ NDefines.NProduction.ANNEX_FUEL_RATIO = 5 -- Base factory speed multiplier (how 
 NDefines.NAir.MIN_PLANE_COUNT_PARADROP=1
 NDefines.NAir.BASE_UNIT_WEIGHT_IN_TRANSPORT_PLANES=0
 NDefines.NAir.CARRIER_SIZE_STAT_INCREMENT = 100
-NDefines.NAir.STRATEGIC_BOMBER_NUKE_AIR_SUPERIORITY = 0
 
 
 --____________________________________________________________
@@ -208,7 +209,6 @@ NDefines.NAI.ATTACK_HEAVILY_DEFENDED_LIMIT = 0.25 -- AI will not launch attacks 
 NDefines.NAI.HOUR_BAD_COMBAT_REEVALUATE = 120 -- if we are in combat for this amount and it goes shitty then try skipping it
 NDefines.NAI.FRONT_UNITS_CAP_FACTOR = 20 -- A factor applied to total front size and supply use. Primarily effects small fronts
 NDefines.NAI.MAX_DIST_PORT_RUSH = 30 -- If a unit is in enemy territory with no supply it will consider nearby ports within this distance.
-NDefines.NAI.INVASION_DISTANCE_RANDOMNESS = 400 -- This higher the value, the more unpredictable the invasions. Compares to actual map distance in pixels.
 NDefines.NAI.NUKE_MISSION_FACTOR = 0 -- AI nuke mission factor
 NDefines.NAI.KAMIKAZE_MISSION_FACTOR = 0 -- AI naval kamikaze mission factor
 NDefines.NAI.DEMOCRATIC_AI_FACTION_KICKING_PLAYER_THREAT_DIFFERENCE = 50 -- World threat generation difference needed to kick a player from a democratic faction
@@ -220,9 +220,16 @@ NDefines.NAI.LAND_COMBAT_FIGHTERS_PER_PLANE = 1.5 -- Amount of air superiority p
 NDefines.NAI.LAND_COMBAT_CAS_PER_ENEMY_ARMY = 30 -- Amount of CAS planes requested per enemy army
 NDefines.NAI.STR_BOMB_MIN_ENEMY_FIGHTERS_IN_AREA = 400 -- If amount of enemy fighters is higher than this mission won't perform
 NDefines.NAI.IMPORTANT_VICTORY_POINT = 40 -- during occupation ai will only care so much to ask for extra garrisons if VP amount is at least this 
+NDefines.NAI.CANCEL_COMBAT_DISADVANTAGE_RATIO = 1.5             -- If the enemy's advantage ratio over us during (normal) combat is more than <value>, allow canceling the attack
+NDefines.NAI.CANCEL_COMBAT_MIN_DURATION_HOURS = 48              -- Only allow cancelling (normal) combat if at least <value> hours have passed
+NDefines.NAI.CANCEL_INVASION_COMBAT_DISADVANTAGE_RATIO = 3.5    -- If the enemy's advantage ratio over us during invasion combat is more than <value>, allow canceling the attack
+NDefines.NAI.CANCEL_INVASION_COMBAT_MIN_DURATION_HOURS = 720    -- Only allow cancelling invasion combat if at least <value> hours have passed
 -- NDefines.NAI.AIR_WING_REINFORCEMENT_LIMIT = 1000
 --____________________________________________________________
 
 -- NRailwayGun
 
-NDefines.NRailwayGun.RAILWAY_GUN_RANGE = 50
+NDefines.NRailwayGun.RAILWAY_GUN_POSSIBLE_RANGES = { 30, 15, 45 }	-- Possible values for railway gun range in pixel.
+												-- For optimization reasons, they are listed here and equipment DB must use one of those.
+												-- when writing railway gun in equipment, use the index in this array
+												-- the first value in array is the default value

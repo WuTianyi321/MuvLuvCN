@@ -666,6 +666,14 @@ technologies = {
 			building = nuclear_reactor
 			level = 1
 		}
+		#enable_building = {
+		#	building = nuclear_reactor_heavy_water
+		#	level = 1
+		#}
+		#enable_building = {
+		#	building = commercial_nuclear_reactor
+		#	level = 1
+		#}
 	}
 	nukes = {
 		start_year = 1945
