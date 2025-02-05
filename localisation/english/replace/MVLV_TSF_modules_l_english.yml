@@ -167,6 +167,7 @@
  MVLV_TSF_leg_ex_ammo:0 "Leg Ammo Bunker"
  MVLV_TSF_melee_fixed_blade:0 "Fixed Torso Blade Vane"
  MVLV_TSF_melee_blade_armor:0 "Torso Blade Armor"
+ MVLV_TSF_melee_sword:0 "Blade"
  MVLV_TSF_no_OS:0 "Mechanical Controls"
  MVLV_TSF_basic_OS:0 "Basic Operating System"
  MVLV_TSF_OS_1_normal:0 "1st Gen Operating System"

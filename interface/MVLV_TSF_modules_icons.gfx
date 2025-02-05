@@ -370,6 +370,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_melee_sword"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/77式长刀.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_MVLV_TSF_data_link_1"
 		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/数据链.dds"
 		legacy_lazy_load = no
