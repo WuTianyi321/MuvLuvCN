@@ -45,7 +45,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_EMI_MVLV_TSF_radar_ex_radar_sensor_type"
+		name = "GFX_EMI_MVLV_TSF_ex_radar_sensor_type"
 		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/雷达.dds"
 		legacy_lazy_load = no
 	}
