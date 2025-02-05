@@ -1,5 +1,5 @@
 division_template = {
-	name = "轨道降下兵团"
+	name = "宇宙军轨道降下兵团"
 	division_names_group = MVLV_PAR_01
 	regiments = {
 		paratrooper= { x = 0 y = 0 }
@@ -13,7 +13,7 @@ division_template = {
 units = {
 	division = {
 		location = 1269
-		division_template = "轨道降下兵团"
+		division_template = "宇宙军轨道降下兵团"
 		start_experience_factor = 1.0
 		force_equipment_variants = { 
 			MVLV_TSF_classis_2_heavy_normal = { 
@@ -25,7 +25,7 @@ units = {
 	}
 	division = {
 		location = 1269
-		division_template = "轨道降下兵团"
+		division_template = "宇宙军轨道降下兵团"
 		start_experience_factor = 1.0
 		force_equipment_variants = { 
 			MVLV_TSF_classis_2_heavy_normal = { 
@@ -37,7 +37,7 @@ units = {
 	}
 	division = {
 		location = 1269
-		division_template = "轨道降下兵团"
+		division_template = "宇宙军轨道降下兵团"
 		start_experience_factor = 1.0
 		force_equipment_variants = { 
 			MVLV_TSF_classis_2_heavy_normal = { 
@@ -49,7 +49,7 @@ units = {
 	}
 	division = {
 		location = 1269
-		division_template = "轨道降下兵团"
+		division_template = "宇宙军轨道降下兵团"
 		start_experience_factor = 1.0
 		force_equipment_variants = { 
 			MVLV_TSF_classis_2_heavy_normal = { 

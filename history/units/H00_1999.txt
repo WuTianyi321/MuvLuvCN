@@ -12,7 +12,7 @@ units = {
 	#喀什
 	#____________________________________________________________
 	division = {
-		name = "あ号標的"
+		name = "一号目标"
 		location = 13254
 		division_template = "A-Target"
 		start_experience_factor = 1

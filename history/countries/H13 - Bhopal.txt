@@ -1,6 +1,7 @@
 capital = 796 #首都
 add_dynamic_modifier = { modifier = "BETA战术改进" }
 1999.1.1 = {
+	load_oob = "BETA_general"
 	oob = "H13_1999"
 
 	add_to_war = { targeted_alliance = BET enemy = UNI } #戦争状態を設定

@@ -4,6 +4,7 @@ add_dynamic_modifier = {
 }
 
 1999.1.1 = {
+	load_oob = "BETA_general"
 	oob = "BET_1999"
 
 	create_faction = "BETA"#陣営を定義

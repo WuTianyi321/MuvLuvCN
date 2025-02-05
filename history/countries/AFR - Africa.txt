@@ -287,11 +287,11 @@ if = {
 }
 
 1999.1.1 = {
-	oob = "AFR_1999"
 	load_oob = "MVLV_gunship"
 	load_oob = "MVLV_normal_rocket"
 	load_oob = "MVLV_TSF"
 	load_oob = "MVLV_TSA"
+	oob = "AFR_1999"
 	# set_naval_oob = "AFR_1999_navy"
 	add_to_war = {
 		targeted_alliance = UNI
