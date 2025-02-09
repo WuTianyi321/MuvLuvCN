@@ -5,7 +5,7 @@
 		division_template = "重装师"
 		start_experience_factor = 0.1
 	}
-	division = { # "第88師団"
+	division = { # "第88师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 88
@@ -44,7 +44,7 @@
 		start_experience_factor = 0.1
 		
 	}
-	division = { # "第57師団"
+	division = { # "第57师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 57

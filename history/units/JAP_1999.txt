@@ -46,7 +46,7 @@ division_template = {
 	priority = 0
 }
 units = {
-	#戦術機師団#
+	#戦術機师团#
 	division = {
 		name = "富士教导队"
 		location = 4188
@@ -328,7 +328,7 @@ units = {
 	}
 	# 第一線兵団
 	division = {
-		# "第51師団"
+		# "第51师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 51
@@ -343,7 +343,7 @@ units = {
 		}
 	}
 	division = {
-		# "第52師団"
+		# "第52师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 52
@@ -358,13 +358,13 @@ units = {
 		}
 	}
 	division = {
-		# "第52師団"
+		# "第52师团"
 		location = 4067
 		division_template = "重装师"
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第53師団"
+		# "第53师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 53
@@ -374,7 +374,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第21師団"
+		# "第21师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 21
@@ -453,7 +453,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第21師団"
+		# "第21师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 21
@@ -463,7 +463,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第32師団"
+		# "第32师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 32
@@ -478,7 +478,7 @@ units = {
 		}
 	}
 	division = {
-		# "第54師団"
+		# "第54师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 54
@@ -488,7 +488,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第3師団"
+		# "第3师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
@@ -498,7 +498,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第22師団"
+		# "第22师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 22
@@ -508,7 +508,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第34師団"
+		# "第34师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 34
@@ -518,7 +518,7 @@ units = {
 		start_experience_factor = 0.4
 	}
 	division = {
-		# "第34師団"
+		# "第34师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 34
@@ -528,7 +528,7 @@ units = {
 		start_experience_factor = 0.4
 	}
 	division = {
-		# "第34師団"
+		# "第34师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 34
@@ -543,7 +543,7 @@ units = {
 		}
 	}
 	division = {
-		# "第55師団"
+		# "第55师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 55
@@ -553,7 +553,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第56師団"
+		# "第56师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 56
@@ -563,7 +563,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第6師団"
+		# "第6师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 6
@@ -583,7 +583,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第35師団"
+		# "第35师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 35
@@ -598,7 +598,7 @@ units = {
 		}
 	}
 	division = {
-		# "第19師団"
+		# "第19师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 19
@@ -608,7 +608,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第20師団"
+		# "第20师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 20
@@ -618,7 +618,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第9師団"
+		# "第9师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 9
@@ -628,7 +628,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第36師団"
+		# "第36师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 36
@@ -643,7 +643,7 @@ units = {
 		}
 	}
 	division = {
-		# "第11師団"
+		# "第11师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 11
@@ -653,7 +653,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第14師団"
+		# "第14师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 14
@@ -663,7 +663,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第1師団"
+		# "第1师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
@@ -673,7 +673,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第25師団"
+		# "第25师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 25
@@ -683,7 +683,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第25師団"
+		# "第25师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 25
@@ -693,7 +693,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第37師団"
+		# "第37师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 37
@@ -708,7 +708,7 @@ units = {
 		}
 	}
 	division = {
-		# "第8師団"
+		# "第8师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 8
@@ -718,7 +718,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第12師団"
+		# "第12师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 12
@@ -728,7 +728,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第5師団"
+		# "第5师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5
@@ -738,7 +738,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第26師団"
+		# "第26师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 26
@@ -748,7 +748,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第38師団"
+		# "第38师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 38
@@ -763,7 +763,7 @@ units = {
 		start_experience_factor = 0.4
 	}
 	division = {
-		# "第18師団"
+		# "第18师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 18
@@ -778,7 +778,7 @@ units = {
 		}
 	}
 	division = {
-		# "第10師団"
+		# "第10师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 10
@@ -788,7 +788,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第16師団"
+		# "第16师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 16
@@ -798,7 +798,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第16師団"
+		# "第16师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 16
@@ -808,7 +808,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第16師団"
+		# "第16师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 16
@@ -818,7 +818,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		# "第27師団"
+		# "第27师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 27
@@ -828,7 +828,7 @@ units = {
 		start_experience_factor = 0.4
 	}
 	division = {
-		# "第31師団"
+		# "第31师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 31
@@ -838,7 +838,7 @@ units = {
 		start_experience_factor = 0.4
 	}
 	division = {
-		# "第31師団"
+		# "第31师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 31
@@ -848,7 +848,7 @@ units = {
 		start_experience_factor = 0.4
 	}
 	division = {
-		# "第33師団"
+		# "第33师团"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 33
