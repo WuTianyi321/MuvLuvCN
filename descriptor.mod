@@ -26,6 +26,6 @@ tags={
 }
 name="muvluvCN"
 picture="thumbnail.png"
-supported_version="1.15.*"
+supported_version="1.16.*"
 path="E:/HOI4/mod/muvluvCN"
 remote_file_id="2800380626"
