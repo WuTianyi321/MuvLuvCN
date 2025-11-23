@@ -1,4 +1,14 @@
 ideas = {
+	hidden_ideas = {
+		给所有国家发资源 = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				# country_resource_oil =  100
+			}
+		}
+	}
 	country = {
 		###難易度系列
 		mvlv_difficulty_easy = {

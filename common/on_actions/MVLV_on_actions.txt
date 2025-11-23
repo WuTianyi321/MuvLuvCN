@@ -1,7 +1,6 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			# 初始化 = yes
 			UNI = {
 				news_event = mvlv_news.4
 			}
@@ -11,6 +10,7 @@ on_actions = {
 				country_event = mvlv_init.0
 			}
 			every_country = {
+				
 				全局参数设置 = yes
 				简单难度参数设置 = yes
 				IF = {
