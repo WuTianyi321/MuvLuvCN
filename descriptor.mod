@@ -1,4 +1,4 @@
-version="0.3.0"
+version="0.3.1"
 replace_path="events"
 replace_path="common/ai_equipment"
 replace_path="common/ai_strategy_plans"
@@ -26,6 +26,6 @@ tags={
 }
 name="muvluvCN"
 picture="thumbnail.png"
-supported_version="1.16.*"
+supported_version="1.17.*"
 path="E:/HOI4/mod/muvluvCN"
 remote_file_id="2800380626"
