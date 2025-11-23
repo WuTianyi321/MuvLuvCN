@@ -1,6 +1,7 @@
 --Game
 --____________________________________________________________
 NDefines.NGame.END_DATE = "2040.1.1.1"
+NDefines.NGame.ENERGY_RESOURCE = "steel"
 --____________________________________________________________
 
 --NFrontend
@@ -108,6 +109,9 @@ NDefines.NMilitary.PLAN_PROVINCE_LOW_VP_DEFENSE_IMPORTANCE = 2.0     -- For area
 NDefines.NMilitary.PLAN_PROVINCE_MEDIUM_VP_DEFENSE_IMPORTANCE = 5.0  -- see above
 NDefines.NMilitary.PLAN_PROVINCE_HIGH_VP_DEFENSE_IMPORTANCE = 10.0   -- see above
 NDefines.NMilitary.PLAN_PROVINCE_CAPITAL_DEFENSE_IMPORTANCE = 50.0   -- For area defense VP orders, boost importance value with this if it's the capital
+NDefines.NMilitary.FUEL_PENALTY_START_RATIO = 0
+NDefines.NMilitary.FUEL_PENALTY_START_RATIO_BUFFER = 0
+-- NDefines.NCountry.STARTING_FUEL_RATIO = 0
 --____________________________________________________________
 
 --NProduction
@@ -116,8 +120,12 @@ NDefines.NProduction.ANNEX_STOCKPILES_RATIO = 0.25 -- How much stockpiled equipm
 NDefines.NProduction.ANNEX_FIELD_EQUIPMENT_RATIO = 0.00 -- How much equipment from deployed divisions will be transferred on annexation
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 100000000 -- How many deployment lines minimum can be training
 NDefines.NProduction.ANNEX_FUEL_RATIO = 0.00 -- How much fuel will be transferred on annexation
-NDefines.NProduction.ANNEX_FUEL_RATIO = 0.00 -- How many convoys will be transferred on annexation
-NDefines.NProduction.ANNEX_FUEL_RATIO = 5 -- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.ANNEX_CONVOYS_RATIO = 0.00 -- How many convoys will be transferred on annexation
+-- NDefines.NProduction.BASE_FACTORY_SPEED = 5 -- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.RESOURCE_TO_ENERGY_COEFFICIENT = 100000
+-- NDefines.NProduction.ENERGY_SCALING_COST_BY_FACTORY_COUNT = 0.00 -- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_ENERGY_COST = 0.00
+-- NDefines.NProduction.BASE_COUNTRY_ENERGY_PRODUCTION = 100
 --____________________________________________________________
 
 --NAir
