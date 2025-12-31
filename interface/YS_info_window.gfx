@@ -1,0 +1,174 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_youjo_info_header_bg
+		texturefile = "gfx/interface/youjo_info_header_bg.dds"
+	}
+	spriteType = {
+		name = GFX_uni_info_bg
+		texturefile = "gfx/interface/uni_info_bg.jpg"
+	}
+	spriteType = {
+		name = GFX_uni_info_logo
+		texturefile = "gfx/interface/uni_info_logo.jpg"
+	}
+	spriteType = {
+		name = GFX_uni_info_beta_original_hive
+		texturefile = "gfx/texticons/BETA原初巢穴.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_beta_compare
+		texturefile = "gfx/texticons/BETA大小对比.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_first_luna_war
+		texturefile = "gfx/texticons/第一次月面战争.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_red_flag_campaign
+		texturefile = "gfx/texticons/红旗作战.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_burn_of_kyoto
+		texturefile = "gfx/texticons/京都燃烧.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_operation_lucifia
+		texturefile = "gfx/texticons/明星作战.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_tsf_flying
+		texturefile = "gfx/texticons/战术机飞行.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_tsf_hell_diver
+		texturefile = "gfx/texticons/轨道降下兵团.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_tsf_a6
+		texturefile = "gfx/texticons/A6海神.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_anti_laser
+		texturefile = "gfx/texticons/AL弹.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_hsst
+		texturefile = "gfx/texticons/HSST.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_defence_after_river
+		texturefile = "gfx/texticons/沿河防御.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_hive_structure
+		texturefile = "gfx/texticons/巢穴构造讲解.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_orbit_dive_picture
+		texturefile = "gfx/texticons/orbitdiver.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_munition_decisions
+		texturefile = "gfx/texticons/弹药决议.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_beta_aggressive
+		texturefile = "gfx/texticons/AggressiveBeta.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_beta_soldier
+		texturefile = "gfx/texticons/BETA兵士级.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_beta_warrior
+		texturefile = "gfx/texticons/BETA斗士级.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_beta_grappler
+		texturefile = "gfx/texticons/BETA要击级.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_beta_tank
+		texturefile = "gfx/texticons/BETA战车级.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_beta_destroyer
+		texturefile = "gfx/texticons/BETA突击级.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_beta_fort
+		texturefile = "gfx/texticons/BETA要塞级.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_beta_laser_range
+		texturefile = "gfx/texticons/光线级照射示意图.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_beta_laser
+		texturefile = "gfx/texticons/BETA光线级.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_beta_heavy_laser
+		texturefile = "gfx/texticons/BETA重光线级.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_beta_formation
+		texturefile = "gfx/texticons/BETA阵型.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_uni_xg70
+		texturefile = "gfx/texticons/XG-70.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = GFX_uni_info_uni_operation_21st
+		texturefile = "gfx/texticons/甲21号作战.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_uni_info_uni_operation_ouka
+		texturefile = "gfx/texticons/樱花作战.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = GFX_uni_info_uni_g_bomb
+		texturefile = "gfx/texticons/G弹原理.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = GFX_uni_info_uni_operation_babylon
+		texturefile = "gfx/texticons/巴比伦作战.png"
+		legacy_lazy_load = no
+	}
+
+	
+}

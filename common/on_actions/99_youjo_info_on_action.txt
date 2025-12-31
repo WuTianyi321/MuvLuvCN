@@ -1,0 +1,20 @@
+on_actions = {
+	#Not run on a specific country.
+	on_startup = {
+		effect = {
+			add_to_array = { global.info_country_list = UNI }
+			add_to_array = { global.info_country_list = BET }
+
+			add_to_array = { global.info_country_list = USA }
+			add_to_array = { global.info_country_list = JAP }
+			add_to_array = { global.info_country_list = H00 }
+
+			# add_to_array = { global.info_country_list = SOV }
+		}
+	}
+}
+
+# add_to_array = { global.info_country_list = EUR }
+# add_to_array = { global.info_country_list = AFR }
+# add_to_array = { global.info_country_list = CHI }
+# add_to_array = { global.info_country_list = GEU }

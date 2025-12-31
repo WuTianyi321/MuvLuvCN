@@ -1,0 +1,26 @@
+scripted_gui = {
+	TNO_SG_super_event_ouka_operation_custom = {
+		### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_ouka_operation_custom_window"
+		visible = {
+			has_country_flag = super_event_frame_ouka_operation			### this country flag triggers the #superevent
+		}
+	}
+	TNO_SG_super_event_frame_ouka_operation_custom = {
+		### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_frame_ouka_operation_custom_window"
+		visible = {
+			has_country_flag = super_event_frame_ouka_operation
+		}
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_frame_ouka_operation				### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+	
+}
+
+#set_country_flag super_event_frame_ouka_operation ## quick command for testing

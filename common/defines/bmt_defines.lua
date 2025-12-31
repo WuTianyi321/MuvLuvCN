@@ -41,8 +41,20 @@ NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_DURATION = 72   -- penalty in or
 NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_MULT = -0.8	
 NDefines.NMilitary.LOW_SUPPLY = 0.8
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 15.0 					-- cost to assign a new trait to a unit leader
-
 NDefines.NMilitary.MIN_DIVISION_BRIGADE_HEIGHT = 5		-- Min height of regiments in division designer.
+NDefines.NMilitary.NUKE_DELAY_HOURS = 2							-- How many hours does it take for the nuclear drop to happen
+NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.5                  -- speed bonus when retreating
+
+NDefines.NRaids.RAID_DEFAULT_TARGET_COOLDOWN_DAYS = 1           -- The default cooldown (in days) for raiding the same target, can be overriden for specific raid types through script
+NDefines.NRaids.BASE_DAYS_TO_PREPARE = 7						   -- Base number of days required to complete raid preparation phase
+NDefines.NRaids.NUCLEAR_BOMB_PRODUCTION_SCALE = 2555.0				-- +1 nuclear_production gives 1 nuke per 7 years
+NDefines.NRaids.THERMONUCLEAR_BOMB_PRODUCTION_SCALE = 2555.0			-- +1 nuclear_production gives 1 nuke per 7 years
+NDefines.NRaids.NUCLEAR_BOMB_MIN_DAMAGE_PERCENT = 0.1					-- Minimum damage from nukes as a percentage of current strength/organisation
+NDefines.NRaids.NUCLEAR_BOMB_MAX_DAMAGE_PERCENT = 0.9					-- Minimum damage from nukes as a percentage of current strength/organisation
+NDefines.NRaids.THERMONUCLEAR_BOMB_MIN_DAMAGE_PERCENT = 0.6			-- Minimum damage from nukes as a percentage of current strength/organisation
+NDefines.NRaids.THERMONUCLEAR_BOMB_MAX_DAMAGE_PERCENT = 0.9			-- Minimum damage from nukes as a percentage of current strength/organisation
+
+
 NDefines.NMarket.IC_TO_CIC_FACTOR = 0.5                  						-- The factor for mapping IC cost to CIC cost. Should be a positive number.
 NDefines.NMarket.MAX_CIV_FACTORIES_PER_CONTRACT = 50							-- Max number of factories that can be assigned for paying single contract.
 NDefines.NAI.EQUIPMENT_MARKET_MAX_CIVS_FOR_PURCHASES_RATIO = 0.5            -- Ratio of available civilian factories to max use for equipment purchases (0.2 = 20 %, so 50 available civs would mean max ca 10 civs to spend on purchases at any one time). Gets modified by equipment_market_spend_factories AI strategy.
@@ -51,6 +63,8 @@ NDefines.NAI.EQUIPMENT_MARKET_MAX_CONVOY_RATIO_FOR_MARKET_WAR = 0.5        -- Ma
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.01	-- The minimum number of factories we have to put on consumer goods, in percent.
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_VALUE = 1		-- The minimum number of factories we have to put on consumer goods, by value.
 NDefines.NProduction.BASE_LICENSE_IC_COST = 10  -- Base IC cost for lended license
+NDefines.NProduction.LEND_LEASE_DELIVERY_TOTAL_DAYS = 14                   -- Nr of days between lend lease deliveries
+NDefines.NProduction.BASE_LAND_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.1        -- Fraction of the chassis industry cost which is always included in the conversion cost.
 NDefines.NMarket.PURCHASE_CONTRACT_DELIVERY_TOTAL_DAYS = 7                   	-- Number of days between purchase contract deliveries
 
 NDefines.NMilitary.STRATEGIC_SPEED_INFRA_BASE = 10.0               -- Base speed of strategic redeployment when not on railways
@@ -63,17 +77,61 @@ NDefines.NMilitary.LAND_EQUIPMENT_RAMP_COST = 5
 NDefines.NMilitary.PARADROP_PENALTY = -0.1 -- Combat penalty when recently paradropped
 NDefines.NMilitary.PARADROP_HOURS = 24 -- time paratroopers suffer penalties in combat
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 1 -- Default days before a mission is removed from the interface after having failed or completed
-
-NDefines.NMilitary.WAR_SCORE_LOSSES_RATIO = 0.1								-- war score gained for every 1000 casualties
-NDefines.NMilitary.WAR_SCORE_LOSSES_MULT_IF_CAPITULATED = 0.05 				-- factor applied to war score gained from casualties if capitulated
-NDefines.NMilitary.WAR_SCORE_STRATEGIC_BOMBING_FACTOR = 0.02  				-- war score gained for every damage made to enemy's building with strategic bombing
-NDefines.NMilitary.WAR_SCORE_STRAT_BOMBING_DECAY_PER_CIVILIAN_FACTORY = 0.10	-- monthly war score deducted from strategic bombing for every civilian factory in service on the bombed enemy side
-NDefines.NMilitary.WAR_SCORE_AIR_IC_LOSS_FACTOR = 0.01						-- war score gained for every IC of damage done to an enemy's air mission
-NDefines.NMilitary.WAR_SCORE_LAND_DAMAGE_FACTOR = 0.01          				-- war score gained for every strengh damage done to an enemy's army
+NDefines.NMilitary.WAR_SCORE_LOSSES_RATIO = 0.001								-- war score gained for every 1000 casualties
+NDefines.NMilitary.WAR_SCORE_LOSSES_MULT_IF_CAPITULATED = 0.01 				-- factor applied to war score gained from casualties if capitulated
+NDefines.NMilitary.WAR_SCORE_STRATEGIC_BOMBING_FACTOR = 0  				-- war score gained for every damage made to enemy's building with strategic bombing
+NDefines.NMilitary.WAR_SCORE_STRAT_BOMBING_DECAY_PER_CIVILIAN_FACTORY = 0	-- monthly war score deducted from strategic bombing for every civilian factory in service on the bombed enemy side
+NDefines.NMilitary.WAR_SCORE_AIR_IC_LOSS_FACTOR = 0.001						-- war score gained for every IC of damage done to an enemy's air mission
+NDefines.NMilitary.WAR_SCORE_LAND_DAMAGE_FACTOR = 0.001          				-- war score gained for every strengh damage done to an enemy's army
 NDefines.NMilitary.WAR_SCORE_ATTACKER_AND_WINNER_FACTOR = 1.2					-- factor applied to war score gained for strength damage done when being the attacker and the winner
-NDefines.NMilitary.WAR_SCORE_LAND_IC_LOSS_FACTOR = 0.01         				-- war score gained for every IC damage done to an enemy's army
+NDefines.NMilitary.WAR_SCORE_LAND_IC_LOSS_FACTOR = 0.001         				-- war score gained for every IC damage done to an enemy's army
 NDefines.NMilitary.WAR_SCORE_PROVINCE_FACTOR = 1.0							-- war score gained when capturing a province for the first time, multiplied by province's worth
-NDefines.NMilitary.WAR_SCORE_LEND_LEASE_GIVEN_IC_FACTOR = 0.003				-- war score gained for every IC of lend lease sent to allies
-NDefines.NMilitary.WAR_SCORE_LEND_LEASE_GIVEN_FUEL_FACTOR = 0.003 			-- war score gained for every 100 units of fuel lend lease sent to allies
-NDefines.NMilitary.WAR_SCORE_LEND_LEASE_RECEIVED_IC_FACTOR = 0.002  			-- war score deducted for every IC of lend lease received from allies
-NDefines.NMilitary.WAR_SCORE_LEND_LEASE_RECEIVED_FUEL_FACTOR = 0.002 		-- war score deducted for every 100 units of fuel lend lease received from allies
+NDefines.NMilitary.WAR_SCORE_LEND_LEASE_GIVEN_IC_FACTOR = 0.001				-- war score gained for every IC of lend lease sent to allies
+NDefines.NMilitary.WAR_SCORE_LEND_LEASE_GIVEN_FUEL_FACTOR = 0.001 			-- war score gained for every 100 units of fuel lend lease sent to allies
+NDefines.NMilitary.WAR_SCORE_LEND_LEASE_RECEIVED_IC_FACTOR = 0.001  			-- war score deducted for every IC of lend lease received from allies
+NDefines.NMilitary.WAR_SCORE_LEND_LEASE_RECEIVED_FUEL_FACTOR = 0.001 		-- war score deducted for every 100 units of fuel lend lease received from allies
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.35          -- effect on defense due to enemy air superiorty
+NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.25				-- Chunk size of manpower reinforcement delivery, in % of total manpower needed by the template.
+NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 50		-- Modifier for army manpower reinforcement delivery speed (travel time)
+NDefines.NSupply.INFRA_TO_SUPPLY = 0.5							-- each level of infra gives this many supply
+
+
+NDefines.NRailwayGun.RAILWAY_GUN_POSSIBLE_RANGES = { 40, 20, 60 }	-- Possible values for railway gun range in pixel.
+												-- For optimization reasons, they are listed here and equipment DB must use one of those.
+												-- when writing railway gun in equipment, use the index in this array
+												-- the first value in array is the default value
+                                                
+NDefines.NAI.CANCEL_COMBAT_DISADVANTAGE_RATIO = 1.5             -- If the enemy's advantage ratio over us during (normal) combat is more than <value>, allow canceling the attack
+NDefines.NAI.CANCEL_COMBAT_MIN_DURATION_HOURS = 48              -- Only allow cancelling (normal) combat if at least <value> hours have passed
+NDefines.NAI.CANCEL_INVASION_COMBAT_DISADVANTAGE_RATIO = 3.5    -- If the enemy's advantage ratio over us during invasion combat is more than <value>, allow canceling the attack
+NDefines.NAI.CANCEL_INVASION_COMBAT_MIN_DURATION_HOURS = 720    -- Only allow cancelling invasion combat if at least <value> hours have passed
+
+NDefines.NMilitary.PLAN_PROVINCE_LOW_VP_DEFENSE_THRESHOLD = 2.0      -- For area defense VP orders, what are the thresholds for "low", "medium" and "high" VP values
+NDefines.NMilitary.PLAN_PROVINCE_MEDIUM_VP_DEFENSE_THRESHOLD = 8.0   -- see above
+NDefines.NMilitary.PLAN_PROVINCE_HIGH_VP_DEFENSE_THRESHOLD = 25.0    -- see above
+NDefines.NMilitary.PLAN_PROVINCE_LOW_VP_DEFENSE_IMPORTANCE = 2.0     -- For area defense VP orders, use this value for relative importance
+NDefines.NMilitary.PLAN_PROVINCE_MEDIUM_VP_DEFENSE_IMPORTANCE = 5.0  -- see above
+NDefines.NMilitary.PLAN_PROVINCE_HIGH_VP_DEFENSE_IMPORTANCE = 10.0   -- see above
+NDefines.NMilitary.PLAN_PROVINCE_CAPITAL_DEFENSE_IMPORTANCE = 50.0   -- For area defense VP orders, boost importance value with this if it's the capital
+NDefines.NSupply.MAX_RAILWAY_LEVEL = 6
+
+NDefines.NProduction.ENERGY_SCALING_COST_BY_FACTORY_COUNT = 0.0 -- 莫名其妙的系数，数值膨胀的元凶
+NDefines.NProduction.BASE_ENERGY_COST = 2 -- 每个厂的基础能耗，每个煤可提供10能量，若为10则一个煤供应一个厂的能量需求
+
+-- 精通点可以1：1存储，上限500
+NDefines.NDoctrines.MASTERY_BANK_CONVERSION_RATE = 1
+NDefines.NDoctrines.MASTERY_BANK_MAX = 500
+
+-- 海军停止也能获得0.2精通（对岸炮击）
+NDefines.NDoctrines.NAVAL_MISSION_MASTERY_GAIN_FACTORS ={  -- Mastery gain from naval missions is reduced, just like training
+		0.2, -- HOLD
+		0.2, -- PATROL
+		0.0, -- STRIKE FORCE
+		0.2, -- CONVOY RAIDING
+		0.2, -- CONVOY ESCORT
+		0.2, -- MINES PLANTING
+		0.2, -- MINES SWEEPING
+		0.0, -- TRAIN # NOT USED - handled by TRAINING_MASTERY_GAIN_FACTOR
+		0.0, -- RESERVE_FLEET
+		0.1, -- NAVAL_INVASION_SUPPORT
+	}

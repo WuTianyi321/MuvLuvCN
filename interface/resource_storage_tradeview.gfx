@@ -1,0 +1,31 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_tungsten_storage"
+		textureFile = "gfx/interface/storage_icons/tungsten_storage.png"
+	}
+	SpriteType = {
+		name = "GFX_steel_storage"
+		textureFile = "gfx/interface/storage_icons/steel_storage.png"
+	}
+	SpriteType = {
+		name = "GFX_chromium_storage"
+		textureFile = "gfx/interface/storage_icons/chromium_storage.png"
+	}
+	SpriteType = {
+		name = "GFX_rubber_storage"
+		textureFile = "gfx/interface/storage_icons/rubber_storage.png"
+	}
+	SpriteType = {
+		name = "GFX_aluminium_storage"
+		textureFile = "gfx/interface/storage_icons/aluminium_storage.png"
+	}
+	SpriteType = {
+		name = "GFX_oil_storage"
+		textureFile = "gfx/interface/storage_icons/oil_storage.png"
+	}
+        SpriteType = {
+		name = "GFX_coal_storage"
+		textureFile = "gfx/interface/storage_icons/coal_storage.png"
+	}
+}

@@ -6,7 +6,18 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_nato_unit_MVLV_tsf_battalion_UAV_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_MVLV_tsf_UAV_icon.dds"
+		#texturefile = "gfx/texticons/nato_unit_tsf_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_nato_unit_MVLV_asa_battalion_icon_small"
+		texturefile = "gfx/texticons/nato_unit_asa_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_nato_unit_MVLV_asa_icon_small"
 		texturefile = "gfx/texticons/nato_unit_asa_icon_small.dds"
 		legacy_lazy_load = no
 	}
@@ -22,10 +33,16 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_nato_unit_MVLV_combined_arms_battalion_icon_small"
-		texturefile = "gfx/texticons/nato_unit_medium_armor_icon_small.dds"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_unit_MVLV_combined_arms_battalion_icon.dds"
+		#texturefile = "gfx/texticons/nato_unit_medium_armor_icon_small.dds"
 		legacy_lazy_load = no
 	}
-	
+	spriteType = {
+		name = "GFX_nato_unit_S_tsf_battalion_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_unit_S_tsf_battalion_icon.dds"
+		#texturefile = "gfx/texticons/nato_unit_S_tsf_battalion_icon_small.dds"
+		legacy_lazy_load = no
+	}
 	###BETA
 	spriteType = {
 		name = "GFX_nato_unit_MVLV_beta_tank_icon_small"
@@ -63,13 +80,36 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	#____________________________________________________________
-	
-	
 	#____________________________________________________________
 	###normal
 	spriteType = {
+		name = "GFX_unit_tsf_sub_weapons_icon_small"
+		texturefile = "gfx/texticons/unit_tsf_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
 		name = "GFX_unit_MVLV_tsf_battalion_icon_small"
 		texturefile = "gfx/texticons/unit_tsf_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_MVLV_tsf_icon_small"
+		texturefile = "gfx/texticons/unit_tsf_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_category_MVLV_tsf_icon_small"
+		texturefile = "gfx/texticons/unit_tsf_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_MVLV_tsf_battalion_UAV_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_MVLV_tsf_UAV_icon.dds"
+		#texturefile = "gfx/texticons/unit_tsf_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
@@ -80,7 +120,37 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 	spriteType = {
+		name = "GFX_unit_MVLV_asa_icon_small"
+		texturefile = "gfx/texticons/unit_asa_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_category_MVLV_asa_icon_small"
+		texturefile = "gfx/texticons/unit_asa_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
 		name = "GFX_unit_MVLV_tsa_battalion_icon_small"
+		texturefile = "gfx/texticons/unit_tsa_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_MVLV_tsa_icon_small"
+		texturefile = "gfx/texticons/unit_tsa_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_MVLV_tsa_sub_icon_small"
+		texturefile = "gfx/texticons/unit_tsa_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_category_MVLV_tsa_icon_small"
 		texturefile = "gfx/texticons/unit_tsa_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
@@ -93,11 +163,18 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_unit_MVLV_combined_arms_battalion_icon_small"
-		texturefile = "gfx/texticons/unit_medium_armor_icon_small.dds"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_unit_MVLV_combined_arms_battalion_icon.dds"
+		#texturefile = "gfx/texticons/unit_medium_armor_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
-	
+	spriteType = {
+		name = "GFX_unit_S_tsf_battalion_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_unit_S_tsf_battalion_icon.dds"
+		#texturefile = "gfx/texticons/unit_S_tsf_battalion_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
 	###BETA
 	spriteType = {
 		name = "GFX_unit_MVLV_beta_tank_icon_small"

@@ -1,0 +1,145 @@
+guiTypes = {
+    containerWindowType = {
+		name = "oil_storage_info"
+		position = { x = 120 y = 10 }
+		instantTextBoxType = {
+			name ="oil_text"
+			position = { x = 0 y = 3 }
+			font = "hoi_18mbs"
+			text = "[Root.Getoil]"
+			format = right
+			maxWidth = 60
+			maxHeight = 24
+			fixedsize = yes
+			
+		}
+		iconType ={
+			name ="oil_storage_info_icon"
+			spriteType = "GFX_oil_storage"
+			pdx_tooltip = "oil_storage_info_tt"
+		}
+	}
+	containerWindowType = {
+		name = "aluminium_storage_info"
+		position = { x = 200 y = 10 }
+		instantTextBoxType = {
+			name ="aluminium_text"
+			position = { x = 0 y = 3 }
+			font = "hoi_18mbs"
+			text = "[Root.Getaluminium]"
+			format = right
+			maxWidth = 60
+			maxHeight = 24
+			fixedsize = yes
+			
+		}
+		iconType ={
+			name ="aluminium_storage_info_icon"
+			spriteType = "GFX_aluminium_storage"
+			pdx_tooltip = "aluminium_storage_info_tt"
+		}
+	}
+	containerWindowType = {
+		position = { x = 280 y = 10 }
+		name = "rubber_storage_info"
+		instantTextBoxType = {
+			name ="rubber_text"
+			position = { x = 0 y = 3 }
+			font = "hoi_18mbs"
+			text = "[Root.Getrubber]"
+			format = right
+			maxWidth = 60
+			maxHeight = 24
+			fixedsize = yes
+			
+		}
+		iconType ={
+			name ="rubber_storage_info_icon"
+			spriteType = "GFX_rubber_storage"
+			pdx_tooltip = "rubber_storage_info_tt"
+		}
+	}
+	containerWindowType = {
+		name = "tungsten_storage_info"
+		position = { x = 360 y = 10 }
+		instantTextBoxType = {
+			name ="tungsten_text"
+			position = { x = 0 y = 3 }
+			font = "hoi_18mbs"
+			text = "[Root.Gettungsten]"
+			format = right
+			maxWidth = 60
+			maxHeight = 24
+			fixedsize = yes
+			
+		}
+		iconType ={
+			name ="tungsten_storage_info_icon"
+			spriteType = "GFX_tungsten_storage"
+			pdx_tooltip = "tungsten_storage_info_tt"
+		}
+	}
+	containerWindowType = {
+		name = "steel_storage_info"
+		position = { x = 440 y = 10 }
+		instantTextBoxType = {
+			name ="steel_text"
+			position = { x = 0 y = 3 }
+			font = "hoi_18mbs"
+			text = "[Root.Getsteel]"
+			format = right
+			maxWidth = 60
+			maxHeight = 24
+			fixedsize = yes
+			
+		}
+		iconType ={
+			name ="steel_storage_info_icon"
+			spriteType = "GFX_steel_storage"
+			pdx_tooltip = "steel_storage_info_tt"
+		}
+	}
+	containerWindowType = {
+		name = "chromium_storage_info"
+		position = { x = 520 y = 10 }
+		instantTextBoxType = {
+			name ="chromium_text"
+			position = { x = 0 y = 3 }
+			font = "hoi_18mbs"
+			text = "[Root.Getchromium]"
+			format = right
+			maxWidth = 60
+			maxHeight = 24
+			fixedsize = yes
+			
+		}
+		iconType ={
+			name ="chromium_storage_info_icon"
+			spriteType = "GFX_chromium_storage"
+			pdx_tooltip = "chromium_storage_info_tt"
+		}
+	}
+
+	containerWindowType = {
+		name = "coal_storage_info"
+		position = { x = 595 y = 10 }
+		instantTextBoxType = {
+			name ="coal_text"
+			position = { x = 0 y = 3 }
+			font = "hoi_18mbs"
+			text = "[Root.Getcoal]"
+			format = right
+			maxWidth = 60
+			maxHeight = 24
+			fixedsize = yes
+			
+		}
+		iconType ={
+			name ="coal_storage_info_icon"
+			spriteType = "GFX_coal_storage"
+			pdx_tooltip = "coal_storage_info_tt"
+		}
+	}
+	
+	
+}

@@ -1,7 +1,7 @@
 types = {
 
 	nuclear_strike = {
-		days_to_prepare = 2
+		days_to_prepare = 1
 		category = nuclear_raids
 
 		command_power = 20 # command power allocation cost
@@ -148,7 +148,7 @@ types = {
 						add_political_power = -50
 					}
 					raid_damage_units = {
-						plane_loss = 0.75
+						plane_loss = 0.5
 						ratio = yes
 					}
 
@@ -163,13 +163,13 @@ types = {
 					raid_add_unit_experience = 0.1
 				}
 				victim_effects = {
-					var:target_state = {
-						custom_effect_tooltip = raid_nuclear_strike_tt
-						add_dynamic_modifier = {
-							modifier = fallout_atomic
-							days = 180
-						}
-					}
+					#var:target_state = {
+					#	custom_effect_tooltip = raid_nuclear_strike_tt
+					#	add_dynamic_modifier = {
+					#		modifier = fallout_atomic
+					#		days = 180
+					#	}
+					#}
 					var:actor_country = {
 						custom_effect_tooltip = raid_nuclear_secondary_target_tt
 						launch_nuke = {
@@ -183,19 +183,19 @@ types = {
 			    custom_sound = raid_result_success_nuclear
 				actor_effects = {
 					raid_damage_units = {
-						plane_loss = 0.1
+						plane_loss = 0
 						ratio = yes
 					}
 					raid_add_unit_experience = 0.35
 				}
 				victim_effects = {
-					var:target_state = {
-						custom_effect_tooltip = raid_nuclear_strike_tt
-						add_dynamic_modifier = {
-							modifier = fallout_atomic
-							days = 365
-						}
-					}
+					#var:target_state = {
+					#	custom_effect_tooltip = raid_nuclear_strike_tt
+					#	add_dynamic_modifier = {
+					#		modifier = fallout_atomic
+					#		days = 365
+					#	}
+					#}
 					var:actor_country = {
 						launch_nuke = {
 							province = var:ROOT.target_province #optional use either province or state
@@ -207,7 +207,7 @@ types = {
 			critical_success = {
 			    custom_sound = raid_result_critical_success_nuclear
 				actor_effects = {
-					raid_add_unit_experience = 0.5
+					raid_add_unit_experience = 1
 				}
 				victim_effects = {
 					var:actor_country = {
@@ -216,13 +216,13 @@ types = {
 							use_nuke = no
 						}
 					}
-					var:target_state = {
+					#var:target_state = {
 						custom_effect_tooltip = raid_nuclear_strike_tt
-						add_dynamic_modifier = {
-							modifier = fallout_atomic
-							days = 730
-						}
-					}
+						#add_dynamic_modifier = {
+						#	modifier = fallout_atomic
+						#	days = 730
+						#}
+					#}
 					
 				}
 			}
@@ -233,7 +233,7 @@ types = {
 	nuclear_missile_strike = {
 		category = nuclear_raids
 
-		days_to_prepare = 2
+		days_to_prepare = 1
 		speed_multiplier = 0.08
 		ai_will_do = {
 			base = 1
@@ -356,13 +356,13 @@ types = {
 				actor_effects = {
 				}
 				victim_effects = {
-					var:target_state = {
+					#var:target_state = {
 						#custom_effect_tooltip = raid_nuclear_strike_tt
-						add_dynamic_modifier = {
-							modifier = fallout_atomic
-							days = 365
-						}
-					}
+						#add_dynamic_modifier = {
+						#	modifier = fallout_atomic
+						#	days = 365
+						#}
+					#}
 					var:actor_country = {
 						launch_nuke = {
 							province = var:ROOT.target_province #optional use either province or state
@@ -376,12 +376,12 @@ types = {
 				actor_effects = {
 				}
 				victim_effects = {
-					var:target_state = {
-						add_dynamic_modifier = {
-							modifier = fallout_atomic
-							days = 365
-						}
-					}
+					#var:target_state = {
+						#add_dynamic_modifier = {
+						#	modifier = fallout_atomic
+						#	days = 365
+						#}
+					#}
 					var:actor_country = {
 						launch_nuke = {
 							province = var:ROOT.target_province #optional use either province or state
@@ -394,7 +394,7 @@ types = {
 	}
 
 	thermonuclear_strike = {
-		days_to_prepare = 2
+		days_to_prepare = 1
 
 		category = nuclear_raids
 
@@ -573,25 +573,25 @@ types = {
 					raid_add_unit_experience = 0.35
 				}
 				victim_effects = {
-					var:target_state = {
-						custom_effect_tooltip = raid_nuclear_strike_tt
-						hidden_effect = {
-							IF = {
-								limit = { 
-									has_dynamic_modifier = {
-										modifier = fallout_atomic
-									}
-								}	
-								remove_dynamic_modifier = {
-									modifier = fallout_atomic
-								}
-							}
-						}
-						add_dynamic_modifier = {
-							modifier = fallout_thermonuclear
-							days = 730
-						}
-					}
+					#var:target_state = {
+					#	custom_effect_tooltip = raid_nuclear_strike_tt
+					#	hidden_effect = {
+					#		IF = {
+					#			limit = { 
+					#				has_dynamic_modifier = {
+					#					modifier = fallout_atomic
+					#				}
+					#			}	
+					#			remove_dynamic_modifier = {
+					#				modifier = fallout_atomic
+					#			}
+					#		}
+					#	}
+						#add_dynamic_modifier = {
+						#	modifier = fallout_thermonuclear
+						#	days = 730
+						#}
+					#}
 					var:actor_country = {
 						launch_nuke = {
 							province = var:ROOT.target_province #optional use either province or state
@@ -607,25 +607,25 @@ types = {
 					raid_add_unit_experience = 0.5
 				}
 				victim_effects = {
-					var:target_state = {
-						custom_effect_tooltip = raid_nuclear_strike_tt
-						hidden_effect = {
-							IF = {
-								limit = { 
-									has_dynamic_modifier = {
-										modifier = fallout_atomic
-									}
-								}	
-								remove_dynamic_modifier = {
-									modifier = fallout_atomic
-								}
-							}
-						}
-						add_dynamic_modifier = {
-							modifier = fallout_thermonuclear
-							days = 730
-						}
-					}
+					#var:target_state = {
+					#	custom_effect_tooltip = raid_nuclear_strike_tt
+					#	hidden_effect = {
+					#		IF = {
+					#			limit = { 
+					#				has_dynamic_modifier = {
+					#					modifier = fallout_atomic
+					#				}
+					#			}	
+					#			remove_dynamic_modifier = {
+					#				modifier = fallout_atomic
+					#			}
+					#		}
+					#	}
+						#add_dynamic_modifier = {
+						#	modifier = fallout_thermonuclear
+						#	days = 730
+						#}
+					#}
 					var:actor_country = {
 						launch_nuke = {
 							province = var:ROOT.target_province #optional use either province or state
@@ -642,7 +642,7 @@ types = {
 	thermonuclear_missile_strike = {
 		category = nuclear_raids
 
-		days_to_prepare = 2
+		days_to_prepare = 1
 		speed_multiplier = 0.08
 
 		ai_will_do = {
@@ -765,13 +765,13 @@ types = {
 				actor_effects = {
 				}
 				victim_effects = {
-					var:target_state = {
+					#var:target_state = {
 						#custom_effect_tooltip = raid_nuclear_strike_tt
-						add_dynamic_modifier = {
-							modifier = fallout_thermonuclear
-							days = 730
-						}
-					}
+						#add_dynamic_modifier = {
+						#	modifier = fallout_thermonuclear
+						#	days = 730
+						#}
+					#}
 					var:actor_country = {
 						launch_nuke = {
 							province = var:ROOT.target_province #optional use either province or state
@@ -786,12 +786,12 @@ types = {
 				actor_effects = {
 				}
 				victim_effects = {
-					var:target_state = {
-						add_dynamic_modifier = {
-							modifier = fallout_thermonuclear
-							days = 730
-						}
-					}
+					#var:target_state = {
+						#add_dynamic_modifier = {
+						#	modifier = fallout_thermonuclear
+						#	days = 730
+						#}
+					#}
 					var:actor_country = {
 						launch_nuke = {
 							province = var:ROOT.target_province #optional use either province or state

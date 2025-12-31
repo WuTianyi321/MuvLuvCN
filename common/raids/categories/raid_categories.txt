@@ -1,21 +1,21 @@
 categories = {
 
-	air_raids = {
-	    visible = { has_dlc = "Gotterdammerung" }
-	    intel_source = air
-		available = {
-		    always = no
-		}
-	}
+	#air_raids = {
+	 #   visible = { has_dlc = "Gotterdammerung" }
+	 #   intel_source = air
+	#	available = {
+	#	    always = no
+	#	}
+	#}
 	
 
-	paratrooper_raids = {
-	    intel_source = air
-	    visible = { has_dlc = "Gotterdammerung" }
-		available = {
-		    has_tech = tech_special_forces
-		}
-	}
+	#paratrooper_raids = {
+	#    intel_source = air
+	#   visible = { has_dlc = "Gotterdammerung" }
+	#	available = {
+	#	    has_tech = tech_special_forces
+	#	}
+	#}
 
 	nuclear_raids = {
 	    intel_source = air

@@ -1,0 +1,1630 @@
+guiTypes = {
+	containerWindowType = {
+		name = "super_event_ouka_operation_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-250 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		# show_sound = super_event_ouka_sound_effect ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "super_event_ouka_t" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		# iconType = {
+		# 	name ="image"
+		# 	spriteType = "GFX_superevent_custom_beta_attack"
+		# 	position = { x= -286 y = -18 }
+		# 	Orientation = center
+		# 	alwaystransparent = yes
+		# }
+
+	}
+
+	containerWindowType = {
+		name = "super_event_frame_ouka_operation_custom_window"
+		size = { width = 874 height = 560 }
+		position = { x=0 y=20 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window0"
+			position = { x = -422 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part0"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window1"
+			position = { x = -412 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part1"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window2"
+			position = { x = -402 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part2"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window3"
+			position = { x = -392 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part3"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window4"
+			position = { x = -382 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part4"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window5"
+			position = { x = -372 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part5"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window6"
+			position = { x = -362 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part6"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window7"
+			position = { x = -352 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part7"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window8"
+			position = { x = -342 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part8"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window9"
+			position = { x = -332 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part9"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window10"
+			position = { x = -322 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part10"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window11"
+			position = { x = -312 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part11"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window12"
+			position = { x = -302 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part12"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window13"
+			position = { x = -292 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part13"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window14"
+			position = { x = -282 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part14"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window15"
+			position = { x = -272 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part15"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window16"
+			position = { x = -262 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part16"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window17"
+			position = { x = -252 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part17"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window18"
+			position = { x = -242 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part18"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window19"
+			position = { x = -232 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part19"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window20"
+			position = { x = -222 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part20"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window21"
+			position = { x = -212 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part21"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window22"
+			position = { x = -202 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part22"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window23"
+			position = { x = -192 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part23"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window24"
+			position = { x = -182 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part24"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window25"
+			position = { x = -172 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part25"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window26"
+			position = { x = -162 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part26"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window27"
+			position = { x = -152 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part27"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window28"
+			position = { x = -142 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part28"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window29"
+			position = { x = -132 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part29"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window30"
+			position = { x = -122 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part30"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window31"
+			position = { x = -112 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part31"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window32"
+			position = { x = -102 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part32"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window33"
+			position = { x = -92 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part33"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window34"
+			position = { x = -82 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part34"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window35"
+			position = { x = -72 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part35"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window36"
+			position = { x = -62 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part36"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window37"
+			position = { x = -52 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part37"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window38"
+			position = { x = -42 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part38"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window39"
+			position = { x = -32 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part39"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window40"
+			position = { x = -22 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part40"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window41"
+			position = { x = -12 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part41"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window42"
+			position = { x = -2 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part42"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window43"
+			position = { x = 8 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part43"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window44"
+			position = { x = 18 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part44"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window45"
+			position = { x = 28 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part45"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window46"
+			position = { x = 38 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part46"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window47"
+			position = { x = 48 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part47"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window48"
+			position = { x = 58 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part48"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window49"
+			position = { x = 68 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part49"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window50"
+			position = { x = 78 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part50"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window51"
+			position = { x = 88 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part51"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window52"
+			position = { x = 98 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part52"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window53"
+			position = { x = 108 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part53"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window54"
+			position = { x = 118 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part54"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window55"
+			position = { x = 128 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part55"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window56"
+			position = { x = 138 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part56"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window57"
+			position = { x = 148 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part57"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window58"
+			position = { x = 158 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part58"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window59"
+			position = { x = 168 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part59"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window60"
+			position = { x = 178 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part60"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window61"
+			position = { x = 188 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part61"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window62"
+			position = { x = 198 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part62"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window63"
+			position = { x = 208 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part63"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window64"
+			position = { x = 218 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part64"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window65"
+			position = { x = 228 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part65"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window66"
+			position = { x = 238 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part66"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window67"
+			position = { x = 248 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part67"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window68"
+			position = { x = 258 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part68"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window69"
+			position = { x = 268 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part69"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window70"
+			position = { x = 278 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part70"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window71"
+			position = { x = 288 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part71"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window72"
+			position = { x = 298 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part72"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window73"
+			position = { x = 308 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part73"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window74"
+			position = { x = 318 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part74"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window75"
+			position = { x = 328 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part75"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window76"
+			position = { x = 338 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part76"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window77"
+			position = { x = 348 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part77"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window78"
+			position = { x = 358 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part78"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window79"
+			position = { x = 368 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part79"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window80"
+			position = { x = 378 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part80"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window81"
+			position = { x = 388 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part81"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window82"
+			position = { x = 398 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part82"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window83"
+			position = { x = 408 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part83"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window84"
+			position = { x = 418 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part84"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "GFX_ouka_video_window85"
+			position = { x = 428 y = -20 }
+			size = { 
+				width = 10 
+				height = 480 
+				preserve_aspect_ratio = yes
+			}
+			Orientation = center
+			Origo = center
+			clipping = no
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ouka_video_part85"
+				alwaystransparent = yes
+			}
+		}
+
+		##############
+
+		buttonType = {
+			name = "Option"
+			text = "super_event_ouka_a"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -110 y = 233 }
+			quadTextureSprite ="GFX_button_221x34"
+			buttonFont = "hoi_24header"
+			Orientation = center
+		}
+
+		# iconType = {
+		# 	name ="underlay"
+		# 	spriteType = "GFX_superevent_text_underlay"
+		# 	position = { x= 30 y = -200 }
+		# 	Orientation = lower_left
+		# 	alwaystransparent = yes
+		# }
+
+		# instantTextBoxType = {
+		# 	name = "text"
+		# 	position = {  x= 120 y = -195 }
+		# 	font = "hoi_24header"
+		# 	text = "super_event_ouka_d" ######## HERE GOES THE DESCRIPTION ###########
+		# 	maxWidth = 455
+		# 	maxHeight = 173
+		# 	fixedsize = yes
+		# 	format = left
+		# 	Orientation = lower_left
+		# }
+	}
+}

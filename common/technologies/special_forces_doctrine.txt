@@ -3,18 +3,10 @@ technologies = {
 	special_forces_mountaineers = {
 		doctrine_name = "TITLE_SPECIAL_FORCES"
 		# EFFECT ########
-		#mountaineers_special_forces_contribution_factor = -0.25
-		#mountaineers = {
-		#	supply_consumption = -0.01
-		#}
-		#category_special_forces = {
 		mountaineers = {
 			max_organisation = 10
 			#soft_attack = 0.05
 		}
-		#enable_subunits = {
-		#	rangers_support
-		#}		
 		###########
 		force_use_small_tech_layout = yes
 		xp_research_type = army
@@ -34,9 +26,12 @@ technologies = {
 				has_tech = JAP_F-4JK
 			}
 		}
+		on_research_complete = {
+			#remove_potential_special_forces_tree = yes
+		}
 		categories = {
-			special_forces_doctrine
-			mountaineers_tech
+			#special_forces_doctrine
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		folder = {
@@ -48,12 +43,6 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 10
-			modifier = {
-				factor = 0
-				NOT = {
-					ai_has_completed_army_doctrine = yes
-				}
-			}
 		}
 		ai_research_weights = {
 			#air_doctrine = -1.0
@@ -85,8 +74,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 4.5
 		categories = {
-			special_forces_doctrine
-			mountaineers_tech
+			#special_forces_doctrine
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		folder = {
@@ -136,8 +125,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 4.5
 		categories = {
-			special_forces_doctrine
-			mountaineers_tech
+			#special_forces_doctrine
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		folder = {
@@ -175,8 +164,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 4.5
 		categories = {
-			special_forces_doctrine
-			mountaineers_tech
+			#special_forces_doctrine
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		folder = {
@@ -211,8 +200,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 4.5
 		categories = {
-			special_forces_doctrine
-			mountaineers_tech
+			#special_forces_doctrine
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		folder = {
@@ -243,8 +232,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 4.5
 		categories = {
-			special_forces_doctrine
-			mountaineers_tech
+			#special_forces_doctrine
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		folder = {
@@ -280,8 +269,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 4.5
 		categories = {
-			special_forces_doctrine
-			mountaineers_tech
+			#special_forces_doctrine
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		folder = {
@@ -311,8 +300,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 4.5
 		categories = {
-			special_forces_doctrine
-			mountaineers_tech
+			#special_forces_doctrine
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		folder = {
@@ -345,8 +334,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 4.5
 		categories = {
-			special_forces_doctrine
-			mountaineers_tech
+			#special_forces_doctrine
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		folder = {
@@ -366,15 +355,16 @@ technologies = {
 	###Marines
 	special_forces_marines = {
 		doctrine_name = "MARINES_DOCTRINE"
+		#allow_branch = {
+		#	has_dlc = "Arms Against Tyranny"
+		#}
 		xp_research_type = army		#navy
 		xp_unlock_cost = 50
+		#xor = { special_forces_mountaineers special_forces_paratroopers }
 		force_use_small_tech_layout = yes
-		allow = {
-			# This Tech is in sub mod, commit it for now
-			# AND = {
-			# 	has_tech = EUR_S_tsf_battalion
-			# }
-		}
+		#on_research_complete = {
+		#	remove_potential_special_forces_tree = yes
+		#}
 		path = {
 			leads_to_tech = marines_jungle_troops
 			research_cost_coeff = 1
@@ -383,23 +373,14 @@ technologies = {
 			leads_to_tech = marines_shore_parties
 			research_cost_coeff = 1
 		}
-		#marines_special_forces_contribution_factor = -0.25
-		#naval_invasion_capacity = 5
-		#category_special_forces = {
-		# S_tsf_battalion  = {
-		# 	max_organisation = 10
-		# }
 		MVLV_asa_battalion = {
 			max_organisation = 10
 		}
-		#enable_subunits = {
-		#	pioneer_support
-		#}
 		doctrine = yes
 		research_cost = 2.25
 		categories = {
-			special_forces_doctrine
-			marine_tech
+			#special_forces_doctrine
+			#marine_tech
 			cat_marines_doctrine
 		}
 		folder = {
@@ -411,19 +392,6 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 20
-			modifier = {
-				factor = 0
-				tag = USA
-				NOT = {
-					has_tech = special_forces_paratroopers
-				}
-			}
-			modifier = {
-				factor = 0
-				NOT = {
-					ai_has_completed_naval_doctrine = yes
-				}
-			}
 		}
 		ai_research_weights = {
 			#artillery = 4.0
@@ -433,23 +401,6 @@ technologies = {
 		xp_research_type = army		#navy
 		xp_unlock_cost = 50
 		force_use_small_tech_layout = yes
-		# S_tsf_battalion = {
-		# 	mountain = {
-		# 		attack = 0.20
-		# 		defence = 0.20
-		# 		movement = 0.20
-		# 	}
-		# 	plains = {
-		# 	attack = 0.2
-		# 	movement = 0.2
-		# 	defence = 0.2
-		# 	}
-		# 	urban = {
-		# 	attack = 0.2
-		# 	movement = 0.2
-		# 	defence = 0.2
-		# 	}
-		# }
 		MVLV_asa_battalion = {
 			mountain = {
 				attack = 0.2
@@ -474,8 +425,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 2.25
 		categories = {
-			special_forces_doctrine
-			marine_tech
+			#special_forces_doctrine
+			#marine_tech
 			cat_marines_doctrine
 		}
 		folder = {
@@ -500,24 +451,6 @@ technologies = {
 			leads_to_tech = marines_recon
 			research_cost_coeff = 1
 		}
-		# S_tsf_battalion = {
-		# 	hive_gateclass = {
-		# 		attack = 0.2
-		# 		defence = 0.1
-		# 	}
-		# 	hive_mainhall = {
-		# 		attack = 0.2
-		# 		defence = 0.1
-		# 	}
-		# 	hive_drift = {
-		# 		attack = 0.3
-		# 		defence = 0.1
-		# 	}
-		# 	hive_gate = {
-		# 		attack = 0.3
-		# 		defence = 0.1
-		# 	}
-		# }
 		MVLV_asa_battalion = {
 			hive_gateclass = {
 				attack = 0.2
@@ -539,8 +472,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 2.25
 		categories = {
-			special_forces_doctrine
-			marine_tech
+			#special_forces_doctrine
+			#marine_tech
 			cat_marines_doctrine
 		}
 		folder = {
@@ -569,11 +502,6 @@ technologies = {
 			leads_to_tech = marines_expeditionary
 			research_cost_coeff = 1
 		}
-		#unit_marine_design_cost_factor = -0.50
-		# S_tsf_battalion = {
-		# 	recon = 0.2
-		# 	initiative = 0.05
-		# }
 		MVLV_asa_battalion = {
 			recon = 0.2
 			initiative = 0.05
@@ -581,8 +509,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 2.25
 		categories = {
-			special_forces_doctrine
-			marine_tech
+			#special_forces_doctrine
+			#marine_tech
 			cat_marines_doctrine
 		}
 		folder = {
@@ -607,11 +535,6 @@ technologies = {
 			leads_to_tech = marines_commandos_demolition
 			research_cost_coeff = 1
 		}
-		# S_tsf_battalion = {
-		# 	soft_attack = 0.1
-		# 	hard_attack = 0.1
-		# 	#combat_width = -0.4
-		# }
 		MVLV_asa_battalion = {
 			soft_attack = 0.1
 			hard_attack = 0.1
@@ -626,8 +549,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 2.25
 		categories = {
-			special_forces_doctrine
-			marine_tech
+			#special_forces_doctrine
+			#marine_tech
 			cat_marines_doctrine
 		}
 		folder = {
@@ -652,10 +575,6 @@ technologies = {
 			leads_to_tech = marines_expeditionary_blowtorch
 			research_cost_coeff = 1
 		}
-		# S_tsf_battalion = {
-		# 	defense = 0.1
-		# 	breakthrough = 0.1
-		# }
 		MVLV_asa_battalion = {
 			defense = 0.1
 			breakthrough = 0.1
@@ -665,8 +584,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 2.25
 		categories = {
-			special_forces_doctrine
-			marine_tech
+			#special_forces_doctrine
+			#marine_tech
 			cat_marines_doctrine
 		}
 		folder = {
@@ -691,21 +610,14 @@ technologies = {
 			leads_to_tech = marines_commandoes_mechanised
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = marines_commandoes_mechanised_non_mtg
-			research_cost_coeff = 1
-		}
-		# S_tsf_battalion = {
-		# 	supply_consumption = -0.01
-		# }
 		MVLV_asa_battalion={
 			supply_consumption = -0.01
 		}
 		doctrine = yes
 		research_cost = 2.25
 		categories = {
-			special_forces_doctrine
-			marine_tech
+			#special_forces_doctrine
+			#marine_tech
 			cat_marines_doctrine
 		}
 		#on_research_complete = {
@@ -741,8 +653,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 2.25
 		categories = {
-			special_forces_doctrine
-			marine_tech
+			#special_forces_doctrine
+			#marine_tech
 			cat_marines_doctrine
 		}
 		folder = {
@@ -763,9 +675,6 @@ technologies = {
 		xp_research_type = army		#navy
 		xp_unlock_cost = 50
 		force_use_small_tech_layout = yes
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
 		special_forces_cap = 0.1
 		#on_research_complete = {
 		#	add_ideas = GEN_cheaper_amphib
@@ -773,43 +682,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 2.25
 		categories = {
-			special_forces_doctrine
-			marine_tech
-			cat_marines_doctrine
-		}
-		folder = {
-			name = special_forces_doctrine_folder
-			position = {
-				x = -1
-				y = 10
-			}
-		}
-		ai_will_do = {
-			factor = 20
-		}
-		ai_research_weights = {
-			#artillery = 4.0
-		}
-	}
-	marines_commandoes_mechanised_non_mtg = {
-		xp_research_type = army		#navy
-		xp_unlock_cost = 50
-		force_use_small_tech_layout = yes
-		allow_branch = {
-			not = {
-				has_dlc = "Man the Guns"
-			}
-		}
-		tsf_sub_weapons = {
-			supply_consumption = -0.02
-			defense = 1
-			breakthrough = 1
-		}
-		doctrine = yes
-		research_cost = 2.25
-		categories = {
-			special_forces_doctrine
-			marine_tech
+			#special_forces_doctrine
+			#marine_tech
 			cat_marines_doctrine
 		}
 		folder = {
@@ -838,8 +712,8 @@ technologies = {
 			breakthrough = 1
 		}
 		categories = {
-			special_forces_doctrine
-			marine_tech
+			#special_forces_doctrine
+			#marine_tech
 			cat_marines_doctrine
 		}
 		folder = {
@@ -886,8 +760,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 2.25
 		categories = {
-			special_forces_doctrine
-			para_tech
+			#special_forces_doctrine
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 		folder = {
@@ -899,12 +773,6 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 20
-			modifier = {
-				factor = 0
-				NOT = {
-					ai_has_completed_air_doctrine = yes
-				}
-			}
 		}
 		ai_research_weights = {
 			#infantry_weapons = 1.5
@@ -926,8 +794,8 @@ technologies = {
 		}
 		#paratroopers_special_forces_contribution_factor = -0.10
 		categories = {
-			special_forces_doctrine
-			para_tech
+			#special_forces_doctrine
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 		folder = {
@@ -962,8 +830,8 @@ technologies = {
 			custom_effect_tooltip = SF_PARAS_combat_effect_tt
 		}
 		categories = {
-			special_forces_doctrine
-			para_tech
+			#special_forces_doctrine
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 		folder = {
@@ -1005,8 +873,8 @@ technologies = {
 		#	airborne_light_armor
 		#}
 		categories = {
-			special_forces_doctrine
-			para_tech
+			#special_forces_doctrine
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 		folder = {
@@ -1041,8 +909,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 2.25
 		categories = {
-			special_forces_doctrine
-			para_tech
+			#special_forces_doctrine
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 		folder = {
@@ -1073,8 +941,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 2.25
 		categories = {
-			special_forces_doctrine
-			para_tech
+			#special_forces_doctrine
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 		folder = {
@@ -1107,8 +975,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 2.25
 		categories = {
-			special_forces_doctrine
-			para_tech
+			#special_forces_doctrine
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 		folder = {
@@ -1141,8 +1009,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 2.25
 		categories = {
-			special_forces_doctrine
-			para_tech
+			#special_forces_doctrine
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 		folder = {
@@ -1171,8 +1039,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 2.25
 		categories = {
-			special_forces_doctrine
-			para_tech
+			#special_forces_doctrine
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 		folder = {
@@ -1205,8 +1073,8 @@ technologies = {
 		doctrine = yes
 		research_cost = 2.25
 		categories = {
-			special_forces_doctrine
-			para_tech
+			#special_forces_doctrine
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 		folder = {

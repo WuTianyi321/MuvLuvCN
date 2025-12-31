@@ -1,0 +1,97 @@
+defined_text = { 
+	name = GetInfoTab1
+	text = {
+		localization_key = "YS_INFO_TAB_INTRO"
+	}
+}
+defined_text = { 
+	name = GetInfoTab2
+	text = {
+		localization_key = "YS_INFO_TAB_NEW"
+	}
+}
+defined_text = { 
+	name = GetInfoTab3
+	text = {
+		localization_key = "YS_INFO_TAB_COUNTRY"
+	}
+}
+defined_text = { 
+	name = GetInfoPanelText
+	text = {
+		trigger = {
+			check_variable = { ys_info_tab_page = 0 } # Default tab
+		}
+		localization_key = "" # Empty, we show the mod logo here
+	}
+	text = {
+		trigger = {
+			check_variable = { ys_info_tab_page = 1 }
+		}
+		localization_key = "YS_INTRO_TEXT"
+	}
+	text = {
+		trigger = {
+			check_variable = { ys_info_tab_page = 2 }
+		}
+		localization_key = "YS_NEW_FEATURES"
+	}
+	text = {
+		trigger = {
+			check_variable = { ys_info_tab_page = 3 }
+			check_variable = { ys_info_country_tag = UNI }
+		}
+		localization_key = "YS_COUNTRY_INTRO_UNI"
+	}
+	text = {
+		trigger = {
+			check_variable = { ys_info_tab_page = 3 }
+			check_variable = { ys_info_country_tag = JAP }
+		}
+		localization_key = "YS_COUNTRY_INTRO_JAP"
+	}
+	text = {
+		trigger = {
+			check_variable = { ys_info_tab_page = 3 }
+			check_variable = { ys_info_country_tag = AFR }
+		}
+		localization_key = "YS_COUNTRY_INTRO_AFR"
+	}
+	text = {
+		trigger = {
+			check_variable = { ys_info_tab_page = 3 }
+			check_variable = { ys_info_country_tag = SOV }
+		}
+		localization_key = "YS_COUNTRY_INTRO_SOV"
+	}
+	text = {
+		trigger = {
+			check_variable = { ys_info_tab_page = 3 }
+			check_variable = { ys_info_country_tag = USA }
+		}
+		localization_key = "YS_COUNTRY_INTRO_USA"
+	}
+	text = {
+		trigger = {
+			check_variable = { ys_info_tab_page = 3 }
+			check_variable = { ys_info_country_tag = BET }
+		}
+		localization_key = "YS_COUNTRY_INTRO_BET"
+	}
+	text = {
+		trigger = {
+			check_variable = { ys_info_tab_page = 3 }
+			check_variable = { ys_info_country_tag = H00 }
+		}
+		localization_key = "YS_COUNTRY_INTRO_H00"
+	}
+	text = {
+		trigger = {
+			check_variable = { ys_info_tab_page = 3 }
+		}
+		localization_key = "YS_COUNTRY_INTRO_OTHER"
+	}
+	text = {
+		localization_key = "YS_INFO_PANEL_PLACEHOLDER_TEXT"
+	}
+}

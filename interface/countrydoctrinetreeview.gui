@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "countrydoctrineview"
-		position = { x=-3 y=78 }
+		position = { x=0 y=75 }
 		size = { width = 100%% height = 100%% }
 		fade_time = 400
 		fade_type = linear
@@ -11,12 +11,12 @@ guiTypes = {
 			quadTextureSprite ="GFX_tiled_plain_bg2"
 		}
 
-		######################陸军ドクトリンSTART#########################
+		######################陸軍ドクトリンSTART#########################
 		containerWindowType = {
-			name = "land_doctrine_folder"
+			name = "old_land_doctrine_folder"
 			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
-			margin = { top = 13 left = 175 bottom = 24 right = 25}
+			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
 			verticalScrollbar = "right_vertical_slider"
 			horizontalScrollbar = "bottom_horizontal_slider"
@@ -34,31 +34,31 @@ guiTypes = {
 			}
 	
 	
-			iconType = {
-				name ="mob_warfare_bg"
-				spriteType = "GFX_mob_warfare_bg"
-				position = { x=85 y=33 }
-			}			
+			#iconType = {
+			#	name ="mob_warfare_bg"
+			#	spriteType = "GFX_mob_warfare_bg"
+			#	position = { x=85 y=33 }
+			#}			
 				
-			iconType = {
-				name ="sup_firepower_bg"
-				spriteType = "GFX_sup_firepower_bg"
-				position = { x=575 y=33 }
-			}	
+			#iconType = {
+			#	name ="sup_firepower_bg"
+			#	spriteType = "GFX_sup_firepower_bg"
+			#	position = { x=575 y=33 }
+			#}	
 	
-			iconType = {
-				name ="grand_battleplan_bg"
-				spriteType = "GFX_grand_battleplan_bg"
-				position = { x=1050 y=33 }
-			}
+			#iconType = {
+			#	name ="grand_battleplan_bg"
+			#	spriteType = "GFX_grand_battleplan_bg"
+			#	position = { x=1050 y=33 }
+			#}
 
-			iconType = {
-				name = "highlight_grand_battle_plan"
-				spriteType = "GFX_tutorial_research_small_item_icon_glow"
-				position = { x=1245 y=291}
-				hide = yes
-				alwaystransparent = yes
-			}
+			#iconType = {
+			#	name = "highlight_grand_battle_plan"
+			#	spriteType = "GFX_tutorial_research_small_item_icon_glow"
+			#	position = { x=1245 y=291}
+			#	hide = yes
+			#	alwaystransparent = yes
+			#}
 		
 			
 			instantTextBoxType = {
@@ -66,7 +66,7 @@ guiTypes = {
 				position = { x = 120 y = 35 }
 				textureFile = ""
 				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
+				borderSize = {x = 0 y = 4} 
 				text = "MOBILE_WARFARE_DOCTRINE_LABEL"
 				maxWidth = 400
 				maxHeight = 122
@@ -171,7 +171,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "sup_firepower_subtitle1"
-				position = { x = 600 y = 435 }
+				position = { x = 600 y = 455 }
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -185,7 +185,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "sup_firepower_subtitle2"
-				position = { x = 850 y = 435 }
+				position = { x = 850 y = 455 }
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
@@ -267,132 +267,13 @@ guiTypes = {
 				
 			}
 
-		}
-		###############陸军ドクトリンEND####################
-		containerWindowType = {
-			name = "naval_doctrine_folder"
-			position = { x=0 y=47 }
-			size = { width = 100%% height = 100%% }
-			margin = { top = 13 left = 13 bottom = 24 right = 25}
-			drag_scroll = { left middle }
-			verticalScrollbar = "right_vertical_slider"
-			horizontalScrollbar = "bottom_horizontal_slider"
-			scroll_wheel_factor = 40
-
-			background = {
-				name = "Background"
-				quadTextureSprite ="GFX_tiled_window_2b_border"
-			}
-
-			containerWindowType = {
-				name = "size_filler"
-				position = { x=0 y=0 }
-				size = { width = 1565 height = 100% }
-			}
-
-			iconType = {
-				name ="fleet_in_being_bg"
-				spriteType = "GFX_fleet_in_being_bg"
-				position = { x=85 y=33 }
-			}			
-				
-			iconType = {
-				name ="trade_interdiction_bg"
-				spriteType = "GFX_trade_interdiction_bg"
-				position = { x=575 y=33 }
-			}	
-	
-			iconType = {
-				name ="base_strike_bg"
-				spriteType = "GFX_base_strike_bg"
-				position = { x=1052 y=33 }
-			}			
-			
-			instantTextBoxType = {
-				name = "fleet_in_being_title"
-				position = { x = 120 y = 35 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
-				text = "TITLE_FLEET_IN_BEING"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "fleet_in_being_desc"
-				position = { x = 130 y = 70 }
-				textureFile = ""
-				font = "hoi_20b"
-				borderSize = {x = 0 y = 4}
-				text = "FLEET_IN_BEING_DESC"
-				maxWidth = 380
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-			
-			instantTextBoxType = {
-				name = "trade_interdiction_title"
-				position = { x = 610 y = 35 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
-				text = "TITLE_TRADE_INTERDICTION"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "trade_interdiction_desc"
-				position = { x = 610 y = 70 }
-				textureFile = ""
-				font = "hoi_20b"
-				borderSize = {x = 0 y = 4}
-				text = "TRADE_INTERDICTION_DESC"
-				maxWidth = 380
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "base_strike_title"
-				position = { x = 1085 y = 35 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
-				text = "TITLE_BASE_STRIKE"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "base_strike_desc"
-				position = { x = 1095 y = 70 }
-				textureFile = ""
-				font = "hoi_20b"
-				borderSize = {x = 0 y = 4}
-				text = "BASE_STRIKE_DESC"
-				maxWidth = 380
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
 			gridboxtype = {
-				name = "fleet_in_being_tree"
-				position = { x=80 y=172 }
-				size = { width = 478 height = 1000 }
+				name = "mass_assault_tree"
+				position = { x=1520 y=172 }
+				size = { width = 480 height = 1350 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
-
+				
 				background = {
 					name = "Background"
 					quadTextureSprite ="GFX_fullborder_tiled"
@@ -401,37 +282,10 @@ guiTypes = {
 				
 			}
 
-			gridboxtype = {
-				name = "trade_interdiction_tree"
-				position = { x=560 y=172 }
-				size = { width = 480 height = 1000 }
-				slotsize = { width=60 height= 60 }
-				format = "UP"
-				
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_fullborder_tiled"
-					position = { x=0 y=-150 }					
-				}
-			}
-
-			gridboxtype = {
-				name = "base_strike_tree"
-				position = { x=1042 y=172 }
-				size = { width = 480 height = 1000 }
-				slotsize = { width=60 height= 60 }
-				format = "UP"
-				
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_fullborder_tiled"
-					position = { x=0 y=-150 }					
-				}
-			}
 		}
-
+		###############陸軍ドクトリンEND####################
 		containerWindowType = {
-			name = "air_doctrine_folder"
+			name = "special_forces_doctrine_folder_no_aat"
 			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
@@ -446,174 +300,55 @@ guiTypes = {
 			}
 
 			containerWindowType = {
-				name = "size_filler"
-				position = { x=0 y=0 }
-				size = { width = 1440 height = 1482 }	
-			}
+				name = "special_forces_rangers_background_window"
+				position = { x = -225 y = 33 }
+				orientation = center_up
 
-			iconType = {
-				name ="air_superiority_bg"
-				spriteType = "GFX_strategic_destruction_bg"
-				position = { x=80 y=33 }
-			}			
-				
-			iconType = {
-				name ="battlefield_destruction_bg"
-				spriteType = "GFX_battlefield_destruction_bg"
-				position = { x=595 y=33 }
-			}	
-	
-			iconType = {
-				name ="operational_destruction_bg"
-				spriteType = "GFX_operational_destruction_bg"
-				position = { x=1100 y=33 }
-			}
-	
-#			iconType = {
-#				name ="strategic_destruction_bg"
-#				spriteType = "GFX_strategic_destruction_bg"
-#				position = { x=1567 y=33 }
-#			}			
-			
-			instantTextBoxType = {
-				name = "strategic_destruction_title"
-				position = { x = 80 y = 35 }
-				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
-				text = "TITLE_STRATEGIC_DESTRUCTION"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
+				iconType = {
+					name ="rangers_bg"
+					spriteType = "GFX_rangers_bg"
+					position = { x=0 y=0 }
+				}
 
-			instantTextBoxType = {
-				name = "strategic_destruction_desc"
-				position = { x = 108 y = 70 }
-				font = "hoi_20b"
-				borderSize = {x = 0 y = 4}
-				text = "STRATEGIC_DESTRUCTION_DESC"
-				maxWidth = 380
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
+				instantTextBoxType = {
+					name = "rangers_title"
+					position = { x = 30 y = 2 }
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = {x = 0 y = 4}
+					text = "RANGERS_DOCTRINE_LABEL"
+					maxWidth = 400
+					maxHeight = 122
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
 
-			instantTextBoxType = {
-				name = "battlefield_support_title"
-				position = { x = 605 y = 35 }
-				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
-				text = "TITLE_BATTLEFIELD_SUPPORT"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "battlefield_support_desc"
-				position = { x = 620 y = 70 }
-				font = "hoi_20b"
-				borderSize = {x = 0 y = 4}
-				text = "BATTLEFIELD_SUPPORT_DESC"
-				maxWidth = 380
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "operational_integrity_title"
-				position = { x = 1105 y = 35 }
-				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
-				text = "TITLE_OPERATIONAL_INTEGRITY"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "operational_integrity_desc"
-				position = { x = 1120 y = 82 }
-				font = "hoi_20b"
-				borderSize = {x = 0 y = 4}
-				text = "OPERATIONAL_INTEGRITY_DESC"
-				maxWidth = 380
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
- 			
-# 			instantTextBoxType = {
-#				name = "strategic_destruction_title"
-#				position = { x = 1580 y = 35 }
-#				font = "hoi_22tech"
-#				borderSize = {x = 0 y = 4}
-#				text = "TITLE_STRATEGIC_DESTRUCTION"
-#				maxWidth = 400
-#				maxHeight = 122
-#				format = center
-#				Orientation = "UPPER_LEFT"
-#			}
- 			
-# 			instantTextBoxType = {
-#				name = "strategic_destruction_desc"
-#				position = { x = 1592 y = 70 }
-#				font = "hoi_20b"
-#				borderSize = {x = 0 y = 4}
-#				text = "STRATEGIC_DESTRUCTION_DESC"
-#				maxWidth = 380
-#				maxHeight = 122
-#				format = center
-#				Orientation = "UPPER_LEFT"
-#			}
-
-			
-			gridboxtype = {
-				#strategic_destruction_tree Needs to be named after first tech (air_superiority)
-				name = "air_superiority_tree"
-				position = { x=80 y=172 }
-				size = { width = 427 height = 1335 }
-				slotsize = { width=60 height= 60 }
-				format = "UP"
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_fullborder_tiled"
-					position = { x=0 y=-150 }					
+				instantTextBoxType = {
+					name = "rangers_desc"
+					position = { x = 50 y = 57 }
+					textureFile = ""
+					font = "hoi_20b"
+					borderSize = {x = 0 y = 4}
+					text = "RANGERS_DOCTRINE_DESC"
+					maxWidth = 350
+					maxHeight = 122
+					format = center
+					Orientation = "UPPER_LEFT"
 				}
 			}
 
 			gridboxtype = {
-				#battlefield_support_tree Needs to be named after first tech (formation_flying)
-				name = "formation_flying_tree"
-				position = { x=595 y=172 }
-				size = { width = 427 height = 1335 }
+				name = "special_forces_rangers_tree"
+				position = { x=-235 y=172 }
+				orientation = center_up
+				size = { width = 478 height = 1000 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
 
 				background = {
 					name = "Background"
 					quadTextureSprite ="GFX_fullborder_tiled"
-					position = { x=0 y=-150 }					
-				}
-			}
-
-			gridboxtype = {
-				#operational_integrity_tree Needs to be named after first tech (force_rotation)
-				name = "force_rotation_tree"
-				position = { x=1100 y=172 }
-				size = { width = 427 height = 1335 }
-				slotsize = { width=60 height= 60 }
-				format = "UP"
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_fullborder_tiled"
-					position = { x=0 y=-150 }					
+					position = { x=0 y=-150 }
 				}
 			}
 		}
@@ -637,104 +372,115 @@ guiTypes = {
 				position = { x=0 y=0 }
 				size = { width = 2100 height = 100% }
 			}
-	
-	
-			iconType = {
-				name ="mountaineers_bg"
-				spriteType = "GFX_mountaineers_bg"
-				position = { x=85 y=33 }
-			}			
+
+			containerWindowType = {
+				name = "special_forces_mountaineers_background_window"
+					
+				iconType = {
+					name ="mountaineers_bg"
+					spriteType = "GFX_mountaineers_bg"
+					position = { x=85 y=33 }
+				}	
 				
-			iconType = {
-				name ="marines_bg"
-				spriteType = "GFX_marine_bg"
-				position = { x=570 y=33 }
-			}	
-	
-			iconType = {
-				name ="paratroopers_bg"
-				spriteType = "GFX_paratroopers_bg"
-				position = { x=1050 y=33 }
-			}		
+				instantTextBoxType = {
+					name = "mountaineers_title"
+					position = { x = 120 y = 35 }
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = {x = 0 y = 4}
+					text = "MOUNTAINEERS_DOCTRINE_LABEL"
+					maxWidth = 400
+					maxHeight = 122
+					format = center
+					Orientation = "UPPER_LEFT"
+				}	
+				
+				instantTextBoxType = {
+					name = "mountaineers_desc"
+					position = { x = 140 y = 90 }
+					textureFile = ""
+					font = "hoi_20b"
+					borderSize = {x = 0 y = 4}
+					text = "MOUNTAINEERS_DOCTRINE_DESC"
+					maxWidth = 350
+					maxHeight = 122
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
+			}
 			
-			instantTextBoxType = {
-				name = "mountaineers_title"
-				position = { x = 120 y = 35 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
-				text = "MOUNTAINEERS_DOCTRINE_LABEL"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}			
-
-			instantTextBoxType = {
-				name = "marines_title"
-				position = { x = 600 y = 35 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
-				text = "MARINES_DOCTRINE_LABEL"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "paratroopers_title"
-				position = { x = 1080 y = 35 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
-				text = "PARATROOPERS_DOCTRINE_LABEL"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}		
-
-			instantTextBoxType = {
-				name = "mountaineers_desc"
-				position = { x = 140 y = 90 }
-				textureFile = ""
-				font = "hoi_20b"
-				borderSize = {x = 0 y = 4}
-				text = "MOUNTAINEERS_DOCTRINE_DESC"
-				maxWidth = 350
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "marines_desc"
-				position = { x = 600 y = 90 }
-				textureFile = ""
-				font = "hoi_20b"
-				borderSize = {x = 0 y = 4}
-				text = "MARINES_DOCTRINE_DESC"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "paratroopers_desc"
-				position = { x = 1100 y = 90 }
-				textureFile = ""
-				font = "hoi_20b"
-				borderSize = {x = 0 y = 4}
-				text = "PARATROOPERS_DOCTRINE_DESC"
-				maxWidth = 350
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
+			containerWindowType = {
+				name = "special_forces_marines_background_window"
+												
+				iconType = {
+					name ="marines_bg"
+					spriteType = "GFX_marine_bg"
+					position = { x=570 y=33 }
+				}	
 				
+				instantTextBoxType = {
+					name = "marines_title"
+					position = { x = 600 y = 35 }
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = {x = 0 y = 4}
+					text = "MARINES_DOCTRINE_LABEL"
+					maxWidth = 400
+					maxHeight = 122
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
+				
+				instantTextBoxType = {
+					name = "marines_desc"
+					position = { x = 600 y = 90 }
+					textureFile = ""
+					font = "hoi_20b"
+					borderSize = {x = 0 y = 4}
+					text = "MARINES_DOCTRINE_DESC"
+					maxWidth = 400
+					maxHeight = 122
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
+			}
+			
+			containerWindowType = {
+				name = "special_forces_paratroopers_background_window"	
+				
+				iconType = {
+					name ="paratroopers_bg"
+					spriteType = "GFX_paratroopers_bg"
+					position = { x=1050 y=33 }
+				}		
+				
+				instantTextBoxType = {
+					name = "paratroopers_title"
+					position = { x = 1080 y = 35 }
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = {x = 0 y = 4}
+					text = "PARATROOPERS_DOCTRINE_LABEL"
+					maxWidth = 400
+					maxHeight = 122
+					format = center
+					Orientation = "UPPER_LEFT"
+				}	
+				
+				instantTextBoxType = {
+					name = "paratroopers_desc"
+					position = { x = 1100 y = 90 }
+					textureFile = ""
+					font = "hoi_20b"
+					borderSize = {x = 0 y = 4}
+					text = "PARATROOPERS_DOCTRINE_DESC"
+					maxWidth = 350
+					maxHeight = 122
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
+			}
+			
 			gridboxtype = {
 				name = "special_forces_mountaineers_tree"
 				position = { x=80 y=172 }
@@ -778,7 +524,8 @@ guiTypes = {
 					position = { x=0 y=-150 }					
 				}					
 				
-			}	 
+			}	
+
 		}
 		containerWindowType = {
 			name = "folder_tabs"
@@ -786,14 +533,14 @@ guiTypes = {
 			size = { width = 100%% height = 30 }
 	
 			buttonType = {
-				name = "land_doctrine_folder_tab"
+				name = "old_land_doctrine_folder_tab"
 				position = { x = -250 y = 0 }
 				quadTextureSprite = "GFX_landdoctrine_tab_large"
 				frame = 1
 				clicksound = ui_doctrine_tab_land
 			}
 			instantTextBoxType = {
-				name = "army_doctrine_title"
+				name = "army_doctrine_folder_title"
 				text = "land_doctrine"
 				position = { x=-190 y=18}
 				font = "hoi_20bs"
@@ -803,46 +550,12 @@ guiTypes = {
 				alwaystransparent = "yes"
 			}
 			iconType = {
-				name = "highlight_land_doctrine_folder"
+				name = "highlight_old_land_doctrine_folder"
 				spriteType = "GFX_tutorial_research_folder_icon_glow"
 				position = { x=-182 y= 0}
 				hide = yes
 				alwaystransparent = yes
 			}
-			buttonType = {
-				name = "naval_doctrine_folder_tab"
-				position = { x = 0 y = 0 }
-				quadTextureSprite = "GFX_navaldoctrine_tab_large"
-				frame = 1
-				clicksound = ui_doctrine_tab_naval
-			}
-			instantTextBoxType = {
-				name = "navy_doctrine_title"
-				text = "naval_doctrine"
-				position = { x=60 y=18}
-				font = "hoi_20bs"
-				maxWidth = 160
-				maxHeight = 20
-				format = center
-				alwaystransparent = "yes"
-			}			
-			buttonType = {
-				name = "air_doctrine_folder_tab"
-				position = { x = 250 y = 0 }
-				quadTextureSprite = "GFX_airdoctrine_tab_large"
-				frame = 1
-				clicksound = ui_doctrine_tab_air
-			}
-			instantTextBoxType = {
-				name = "air_doctrine_title"
-				text = "air_doctrine"
-				position = { x=310 y=18}
-				font = "hoi_20bs"
-				maxWidth = 160
-				maxHeight = 20
-				format = center
-				alwaystransparent = "yes"
-			}	
 			buttonType = {
 				name = "special_forces_doctrine_folder_tab"
 				position = { x = 504 y = 0 }
@@ -875,7 +588,7 @@ guiTypes = {
 	}
 	
 	containerWindowType = {
-		name = "techtree_land_doctrine_folder_item"
+		name = "techtree_old_land_doctrine_folder_item"
 		position = { x=0 y=5 }
 		size = { width = 72 height = 72 }
 		clipping = no
@@ -910,77 +623,6 @@ guiTypes = {
 		}
 	}
 
-	containerWindowType = {
-		name = "techtree_naval_doctrine_folder_item"
-		position = { x=0 y=5 }
-		size = { width = 72 height = 72 }
-		clipping = no
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_technology_unavailable_item_bg"
-		}
-
-		iconType = {
-			name = "Icon"
-			position = { x=3 y=3 }
-			spriteType = "GFX_technology_medium"
-			alwaystransparent = yes
-		}
-		iconType = {
-			name = "bonus_icon"
-			position = { x=-1 y=-22 }
-			spriteType = "GFX_tech_bonus"
-		}
-		
-		instantTextBoxType = {
-			name = "bonus"
-			position = { x = -1 y = -22 }
-			textureFile = ""
-			font = "hoi_16mbs"
-			borderSize = {x = 4 y = 4}
-			text = "lol boat"
-			maxWidth = 80
-			maxHeight = 20
-			format = center
-		}
-	}
-
-	containerWindowType = {
-		name = "techtree_air_doctrine_folder_item"
-		position = { x=0 y=5 }
-		size = { width = 72 height = 72 }
-		clipping = no
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_technology_unavailable_item_bg"			
-		}
-
-		iconType = {
-			name = "Icon"
-			position = { x=3 y=3 }
-			spriteType = "GFX_technology_medium"
-			alwaystransparent = yes
-		}
-		iconType = {
-			name = "bonus_icon"
-			position = { x=-1 y=-22 }
-			spriteType = "GFX_tech_bonus"
-		}
-		
-		instantTextBoxType = {
-			name = "bonus"
-			position = { x = -1 y = -22 }
-			textureFile = ""
-			font = "hoi_16mbs"
-			borderSize = {x = 4 y = 4}
-			text = "lol boat"
-			maxWidth = 80
-			maxHeight = 20
-			format = center
-		}
-	}
 	containerWindowType = {
 		name = "techtree_special_forces_doctrine_folder_item"
 		position = { x=0 y=5 }

@@ -1,0 +1,693 @@
+# 樱花作战视频测试动画
+# 总共86个，852x480，1580帧
+
+spriteTypes = {
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part0"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part0.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part1"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part1.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part2"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part2.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part3"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part3.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part4"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part4.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part5"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part5.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part6"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part6.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part7"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part7.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part8"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part8.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part9"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part9.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part10"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part10.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part11"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part11.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part12"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part12.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part13"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part13.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part14"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part14.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part15"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part15.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part16"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part16.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part17"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part17.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part18"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part18.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part19"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part19.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part20"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part20.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part21"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part21.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part22"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part22.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part23"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part23.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part24"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part24.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part25"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part25.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part26"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part26.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part27"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part27.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part28"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part28.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part29"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part29.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part30"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part30.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part31"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part31.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part32"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part32.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part33"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part33.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part34"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part34.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part35"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part35.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part36"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part36.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part37"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part37.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part38"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part38.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part39"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part39.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part40"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part40.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part41"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part41.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part42"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part42.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part43"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part43.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part44"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part44.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part45"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part45.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part46"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part46.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part47"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part47.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part48"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part48.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part49"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part49.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part50"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part50.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part51"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part51.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part52"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part52.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part53"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part53.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part54"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part54.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part55"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part55.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part56"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part56.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part57"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part57.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part58"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part58.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part59"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part59.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part60"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part60.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part61"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part61.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part62"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part62.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part63"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part63.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part64"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part64.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part65"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part65.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part66"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part66.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part67"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part67.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part68"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part68.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part69"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part69.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part70"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part70.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part71"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part71.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part72"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part72.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part73"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part73.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part74"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part74.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part75"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part75.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part76"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part76.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part77"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part77.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part78"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part78.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part79"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part79.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part80"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part80.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part81"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part81.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part82"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part82.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part83"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part83.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part84"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part84.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_ouka_video_part85"
+		texturefile = "gfx/animated_textures/super_event_ouka/muvluv_operation_ouka_480p_part85.png"
+		noOfFrames = 1580
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+	}
+}

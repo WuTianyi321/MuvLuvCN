@@ -1,0 +1,63 @@
+ys_info_tab_1 = {
+	set_variable = { ys_info_tab_page = 1 }
+	set_variable = { ys_info_tab_1_frame = 1 }
+	set_variable = { ys_info_tab_2_frame = 2 }
+	set_variable = { ys_info_tab_3_frame = 2 }
+	ys_info_country_list_close = yes
+}
+ys_info_tab_2 = {
+	set_variable = { ys_info_tab_page = 2 }
+	set_variable = { ys_info_tab_1_frame = 2 }
+	set_variable = { ys_info_tab_2_frame = 1 }
+	set_variable = { ys_info_tab_3_frame = 2 }
+	ys_info_country_list_close = yes
+}
+ys_info_tab_3 = {
+	set_variable = { ys_info_tab_page = 3 }
+	set_variable = { ys_info_tab_1_frame = 2 }
+	set_variable = { ys_info_tab_2_frame = 2 }
+	set_variable = { ys_info_tab_3_frame = 1 }
+	ys_info_country_list_close = yes
+}
+ys_info_tab_open = {
+	clr_country_flag = ys_info_tab_closed
+	set_variable = { ys_info_tab_1_frame = 2 }
+	set_variable = { ys_info_tab_2_frame = 2 }
+	set_variable = { ys_info_tab_3_frame = 2 }
+	set_variable = { ys_info_country_list_state = 2 }
+	set_variable = { ys_info_country_tag = ROOT }
+}
+ys_info_tab_close = {
+	set_country_flag = ys_info_tab_closed
+	clear_variable = ys_info_tab_page
+	set_variable = { ys_info_tab_1_frame = 2 }
+	set_variable = { ys_info_tab_2_frame = 2 }
+	set_variable = { ys_info_tab_3_frame = 2 }
+	ys_info_country_list_close = yes
+}
+ys_info_country_list_open = {
+	set_variable = { ys_info_country_list_state = 1 }
+	for_each_loop = {
+		array = global.info_country_list
+		add_to_array = { ys_info_country_list = v }
+	}
+}
+ys_info_country_list_close = {
+	set_variable = { ys_info_country_list_state = 2 }
+	clear_array = ys_info_country_list
+}
+ys_info_country_list_click = {
+	if = {
+		limit = {
+			check_variable = { ys_info_country_list_state = 1 }
+		}
+		ys_info_country_list_close = yes
+	}
+	else = {
+		ys_info_country_list_open = yes
+	}
+}
+ys_info_country_list_flag_click = {
+	set_variable = { ys_info_country_tag = v }
+	ys_info_tab_3 = yes
+}

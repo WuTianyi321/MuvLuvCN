@@ -1,0 +1,57 @@
+scripted_gui = {
+	ys_info_button = {
+		window_name = "ys_info_button_container"
+		context_type = player_context
+		parent_window_token = top_bar
+
+		visible = {
+			is_ai = no
+			has_country_flag = ys_info_tab_closed
+		}
+
+		effects = {
+			ys_info_button_click = {
+				ys_info_tab_open = yes
+			}
+		}
+	}
+	ys_info_ui = {
+		window_name = "ys_info_ui_window"
+		context_type = player_context
+		parent_window_token = top_bar
+
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = ys_info_tab_closed }
+		}
+
+		dynamic_lists = {
+			country_list_grid = {
+				array = ys_info_country_list
+				entry_container = "country_list_flag_container"
+			}
+		}
+
+		triggers = {
+			logo_bg_visible = { check_variable = { ys_info_tab_page = 0 } }
+			country_list_flag_frame_major_visible = { var:v = { is_major = yes } }
+		}
+
+		effects = {
+			tab_1_click = { ys_info_tab_1 = yes }
+			tab_2_click = { ys_info_tab_2 = yes }
+			tab_3_click = { ys_info_tab_3 = yes }
+			close_button_click = { ys_info_tab_close = yes }
+			country_list_button_click = { ys_info_country_list_click = yes }
+			country_list_flag_click = { ys_info_country_list_flag_click = yes }
+		}
+
+		properties = {
+			tab_1 = { frame = ys_info_tab_1_frame }
+			tab_2 = { frame = ys_info_tab_2_frame }
+			tab_3 = { frame = ys_info_tab_3_frame }
+			country_list_button = { frame = ys_info_country_list_state }
+			country_list_flag = { image = "[?v.GetFlag]" }
+		}
+	}
+}

@@ -15,6 +15,7 @@ sound/**/*.wav
 
 # Ignore the packing program might placed here
 *.exe
+*.7z
 
 # The repack folder created by script that used to release the mod
 repack

@@ -44,7 +44,7 @@ types = {
 		}
 		# Raid Type is visible
 		visible = {
-			has_tech = paratroopers
+			has_tech = tech_special_forces#paratroopers
 		}
 		# Specific Target is visible
 		show_target = {
@@ -331,7 +331,7 @@ types = {
 		}
 		# Raid Type is visible
 		visible = {
-			has_tech = paratroopers
+			has_tech = tech_special_forces#paratroopers
 		}
 		# Specific Target is visible
 		show_target = {

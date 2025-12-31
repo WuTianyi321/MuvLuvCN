@@ -41,10 +41,6 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 4
-				tag = ENG
-			}
 		}
 		categories = {
 			naval_equipment
@@ -76,7 +72,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
 					tag = JAP
 				}
 			}
@@ -115,7 +110,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
 					tag = JAP
 					tag = USA
 				}
@@ -147,7 +141,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
 					tag = JAP
 					tag = USA
 				}
@@ -171,10 +164,6 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 8
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
 		}
 		categories = {
 			naval_equipment
@@ -212,14 +201,6 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 4
-			modifier = {
-				factor = 2
-				has_war_with = GER
-			}
-			modifier = {
-				factor = 2
-				anti_submarine_strategy_required_trigger = yes
-			}
 		}
 		categories = {
 			naval_equipment
@@ -253,14 +234,6 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 4
-			modifier = {
-				factor = 2
-				has_war_with = GER
-			}
-			modifier = {
-				factor = 2
-				anti_submarine_strategy_required_trigger = yes
-			}
 		}
 		categories = {
 			naval_equipment
@@ -294,14 +267,6 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 4
-				has_war_with = GER
-			}
-			modifier = {
-				factor = 2
-				anti_submarine_strategy_required_trigger = yes
-			}
 		}
 		categories = {
 			naval_equipment
@@ -331,14 +296,6 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 4
-				has_war_with = GER
-			}
-			modifier = {
-				factor = 2
-				anti_submarine_strategy_required_trigger = yes
-			}
 		}
 		categories = {
 			naval_equipment
@@ -369,14 +326,6 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 4
-				has_war_with = GER
-			}
-			modifier = {
-				factor = 2
-				anti_submarine_strategy_required_trigger = yes
-			}
 		}
 		categories = {
 			naval_equipment
@@ -403,14 +352,6 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 4
-				has_war_with = GER
-			}
-			modifier = {
-				factor = 2
-				anti_submarine_strategy_required_trigger = yes
-			}
 		}
 		categories = {
 			naval_equipment
@@ -458,7 +399,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
 					tag = JAP
 					tag = USA
 				}
@@ -499,7 +439,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
 					tag = JAP
 					tag = USA
 				}
@@ -535,7 +474,6 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = ENG
 					tag = JAP
 					tag = USA
 				}
@@ -569,7 +507,6 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = ENG
 					tag = USA
 				}
 			}
@@ -601,7 +538,6 @@ technologies = {
 			modifier = {
 				factor = 3.5
 				OR = {
-					tag = GER
 					tag = JAP
 					tag = USA
 				}
@@ -642,7 +578,6 @@ technologies = {
 			modifier = {
 				factor = 3
 				OR = {
-					tag = ENG
 					tag = JAP
 					tag = USA
 				}
@@ -683,7 +618,6 @@ technologies = {
 			modifier = {
 				factor = 3
 				OR = {
-					tag = ENG
 					tag = JAP
 					tag = USA
 				}
@@ -720,7 +654,6 @@ technologies = {
 			modifier = {
 				factor = 3
 				OR = {
-					tag = ENG
 					tag = JAP
 					tag = USA
 				}
@@ -769,7 +702,6 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = ENG
 					tag = JAP
 					tag = USA
 				}
@@ -817,7 +749,6 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = ENG
 					tag = JAP
 					tag = USA
 				}
@@ -958,7 +889,6 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = ENG
 					tag = JAP
 					tag = USA
 				}
@@ -996,7 +926,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
 					tag = USA
 				}
 			}
@@ -1045,7 +974,6 @@ technologies = {
 			modifier = {
 				factor = 8
 				OR = {
-					tag = ENG
 					tag = JAP
 					tag = USA
 				}
@@ -1081,7 +1009,6 @@ technologies = {
 			modifier = {
 				factor = 8
 				OR = {
-					tag = ENG
 					tag = JAP
 					tag = USA
 				}
@@ -1117,7 +1044,6 @@ technologies = {
 			modifier = {
 				factor = 8
 				OR = {
-					tag = ENG
 					tag = JAP
 					tag = USA
 				}
@@ -1149,7 +1075,6 @@ technologies = {
 			modifier = {
 				factor = 8
 				OR = {
-					tag = ENG
 					tag = JAP
 					tag = USA
 				}
@@ -1199,7 +1124,6 @@ technologies = {
 				OR = {
 					tag = JAP
 					tag = USA
-					tag = GER
 				}
 				factor = 5
 			}
@@ -1252,7 +1176,6 @@ technologies = {
 				OR = {
 					tag = JAP
 					tag = USA
-					tag = GER
 				}
 				factor = 5
 			}
@@ -1301,7 +1224,6 @@ technologies = {
 				OR = {
 					tag = JAP
 					tag = USA
-					tag = GER
 				}
 				factor = 5
 			}
@@ -1335,7 +1257,6 @@ technologies = {
 				OR = {
 					tag = JAP
 					tag = USA
-					tag = GER
 				}
 				factor = 5
 			}
@@ -1464,7 +1385,6 @@ technologies = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
 					tag = USA
 				}
 			}
@@ -1504,7 +1424,6 @@ technologies = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
 					tag = USA
 				}
 			}
@@ -1544,7 +1463,6 @@ technologies = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
 					tag = USA
 				}
 			}
@@ -1576,7 +1494,6 @@ technologies = {
 			modifier = {
 				factor = 7
 				OR = {
-					tag = GER
 					tag = USA
 				}
 			}
@@ -1609,15 +1526,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 7
-				OR = {
-					tag = GER
-					tag = HOL
-				}
-			}
-			modifier = {
 				not = {
-					has_war_with = ENG
 					has_War_with = USA
 				}
 				factor = 0.5
@@ -1654,13 +1563,6 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 7
-				OR = {
-					tag = GER
-					tag = HOL
-				}
-			}
 		}
 		categories = {
 			naval_equipment
@@ -2116,7 +2018,6 @@ technologies = {
 			}
 			modifier = {
 				OR = {
-					tag = GER
 					tag = JAP
 				}
 				factor = 2
@@ -2155,7 +2056,6 @@ technologies = {
 			}
 			modifier = {
 				OR = {
-					tag = GER
 					tag = JAP
 				}
 				factor = 2
@@ -2190,7 +2090,6 @@ technologies = {
 			}
 			modifier = {
 				OR = {
-					tag = GER
 					tag = JAP
 				}
 				factor = 2
@@ -2362,7 +2261,6 @@ technologies = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = ENG
 					tag = USA
 					tag = JAP
 				}
@@ -2663,9 +2561,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
 					tag = USA
-					tag = ENG
 					tag = SOV
 				}
 				factor = 6
@@ -2706,9 +2602,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
 					tag = USA
-					tag = ENG
 					tag = SOV
 				}
 				factor = 6
@@ -2738,9 +2632,7 @@ technologies = {
 			factor = 1.5
 			modifier = {
 				OR = {
-					tag = GER
 					tag = USA
-					tag = ENG
 					tag = SOV
 				}
 				factor = 6
@@ -2776,9 +2668,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
 					tag = USA
-					tag = ENG
 					tag = SOV
 				}
 				factor = 6
@@ -2813,9 +2703,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
 					tag = USA
-					tag = ENG
 					tag = SOV
 				}
 				factor = 5
@@ -2851,7 +2739,6 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = USA
-					tag = ENG
 				}
 				factor = 5
 			}
@@ -2885,9 +2772,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
 					tag = USA
-					tag = ENG
 				}
 				factor = 7
 			}
@@ -2953,8 +2838,10 @@ technologies = {
 	}
 	mtg_transport = {
 		#WHEN BALANCING - ALSO FIX REGULAR NAVAL TREE
-		transport_capacity = -0.5
-		naval_invasion_capacity = 10
+		transport_capacity = -0.33
+		naval_invasion_prep_days = -10
+		naval_invasion_division_cap = 2 
+		naval_invasion_plan_cap = 1
 		path = {
 			leads_to_tech = mtg_landing_craft
 			research_cost_coeff = 1
@@ -2986,10 +2873,6 @@ technologies = {
 				factor = 3
 				tag = JAP
 			}
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
 		}
 		categories = {
 			naval_equipment
@@ -2997,9 +2880,12 @@ technologies = {
 		}
 	}
 	mtg_landing_craft = {
-		invasion_preparation = -0.5
+		#invasion_preparation = -0.25
 		amphibious_invasion_defence = 0.15
-		naval_invasion_capacity = 40
+		naval_invasion_prep_days = -10
+		naval_invasion_division_cap = 4 
+		naval_invasion_plan_cap = 3	
+		#naval_invasion_capacity = 20
 		path = {
 			leads_to_tech = mtg_tank_landing_craft
 			research_cost_coeff = 1
@@ -3047,18 +2933,9 @@ technologies = {
 				}
 			}
 			modifier = {
-				factor = 2
-				tag = ENG
-			}
-			modifier = {
 				factor = 10
 				OR = {
-					tag = ENG
 					tag = USA
-				}
-				has_war_with = GER
-				GER = {
-					has_war_with = SOV
 				}
 			}
 		}
@@ -3070,7 +2947,10 @@ technologies = {
 	mtg_tank_landing_craft = {
 		amphibious_invasion = 0.25
 		amphibious_invasion_defence = 0.5
-		naval_invasion_capacity = 100
+		naval_invasion_prep_days = -10
+		naval_invasion_division_cap = 5 
+		naval_invasion_plan_cap = 4			
+		#naval_invasion_capacity = 100
 		research_cost = 2
 		start_year = 1944
 		folder = {
@@ -3097,10 +2977,6 @@ technologies = {
 			modifier = {
 				factor = 3
 				tag = JAP
-			}
-			modifier = {
-				factor = 2
-				tag = ENG
 			}
 		}
 		categories = {
