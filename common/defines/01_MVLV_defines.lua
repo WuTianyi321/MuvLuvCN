@@ -1,6 +1,7 @@
 --Game
 --____________________________________________________________
 NDefines.NGame.END_DATE = "2040.1.1.1"
+NDefines.NGame.ENERGY_RESOURCE = "steel"
 --____________________________________________________________
 
 --NFrontend
@@ -36,7 +37,7 @@ NDefines.NCountry.BASE_COMMAND_POWER_GAIN = 2 -- base value for daily command po
 NDefines.NCountry.SURRENDER_LIMIT_MULT_FOR_COUNTRIES_WITH_NO_CORES = 1 -- Countries with no owned cores will their surrender level multiplied by this amount
 NDefines.NCountry.BASE_MAX_COMMAND_POWER = 1000
 NDefines.NCountry.PARADROP_AIR_SUPERIORITY_RATIO=0
-NDefines.NCountry.INVASION_REPORT_EXPERATION_DAYS = 7
+
 --____________________________________________________________
 
 --NMilitary
@@ -55,14 +56,14 @@ NDefines.NMilitary.WAR_SCORE_LEND_LEASE_GIVEN_IC_FACTOR = 0.003				-- war score 
 NDefines.NMilitary.WAR_SCORE_LEND_LEASE_GIVEN_FUEL_FACTOR = 0.003 			-- war score gained for every 100 units of fuel lend lease sent to allies
 NDefines.NMilitary.WAR_SCORE_LEND_LEASE_RECEIVED_IC_FACTOR = 0.002  			-- war score deducted for every IC of lend lease received from allies
 NDefines.NMilitary.WAR_SCORE_LEND_LEASE_RECEIVED_FUEL_FACTOR = 0.002 		-- war score deducted for every 100 units of fuel lend lease received from allies
-NDefines.NMilitary.RELIABILTY_RECOVERY = 0.40
+NDefines.NMilitary.RELIABILTY_RECOVERY = 0.01
 NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = false -- 线性经验
 NDefines.NMilitary.UNIT_LEADER_TRAIT_SLOT_PER_LEVEL = { 1.0, 1.0, 1.0, 0.0, } --将领特质槽
 
 NDefines.NMilitary.SLOWEST_SPEED = 0 -- Default:4
 NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = 0.0
-NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 120 -- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
-NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 120 -- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 240 -- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 0 -- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.FRONT_MIN_PATH_TO_REDEPLOY = 1 -- If a units path is at least this long to reach its front location, it will strategically redeploy.
 NDefines.NMilitary.PLAN_EXECUTE_CAREFUL_MAX_FORT = 30 -- If execution mode is set to careful, units will not attack provinces with fort levels greater than or equal to this 
 NDefines.NMilitary.STRATEGIC_REDEPLOY_ORG_RATIO = 0.75 -- Ratio of max org while strategic redeployment
@@ -108,6 +109,9 @@ NDefines.NMilitary.PLAN_PROVINCE_LOW_VP_DEFENSE_IMPORTANCE = 2.0     -- For area
 NDefines.NMilitary.PLAN_PROVINCE_MEDIUM_VP_DEFENSE_IMPORTANCE = 5.0  -- see above
 NDefines.NMilitary.PLAN_PROVINCE_HIGH_VP_DEFENSE_IMPORTANCE = 10.0   -- see above
 NDefines.NMilitary.PLAN_PROVINCE_CAPITAL_DEFENSE_IMPORTANCE = 50.0   -- For area defense VP orders, boost importance value with this if it's the capital
+NDefines.NMilitary.FUEL_PENALTY_START_RATIO = 0
+NDefines.NMilitary.FUEL_PENALTY_START_RATIO_BUFFER = 0
+-- NDefines.NCountry.STARTING_FUEL_RATIO = 0
 --____________________________________________________________
 
 --NProduction
@@ -116,8 +120,12 @@ NDefines.NProduction.ANNEX_STOCKPILES_RATIO = 0.25 -- How much stockpiled equipm
 NDefines.NProduction.ANNEX_FIELD_EQUIPMENT_RATIO = 0.00 -- How much equipment from deployed divisions will be transferred on annexation
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 100000000 -- How many deployment lines minimum can be training
 NDefines.NProduction.ANNEX_FUEL_RATIO = 0.00 -- How much fuel will be transferred on annexation
-NDefines.NProduction.ANNEX_FUEL_RATIO = 0.00 -- How many convoys will be transferred on annexation
-NDefines.NProduction.ANNEX_FUEL_RATIO = 5 -- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.ANNEX_CONVOYS_RATIO = 0.00 -- How many convoys will be transferred on annexation
+-- NDefines.NProduction.BASE_FACTORY_SPEED = 5 -- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.RESOURCE_TO_ENERGY_COEFFICIENT = 100000
+-- NDefines.NProduction.ENERGY_SCALING_COST_BY_FACTORY_COUNT = 0.00 -- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_ENERGY_COST = 0.00
+-- NDefines.NProduction.BASE_COUNTRY_ENERGY_PRODUCTION = 100
 --____________________________________________________________
 
 --NAir
@@ -139,7 +147,6 @@ NDefines.NProduction.ANNEX_FUEL_RATIO = 5 -- Base factory speed multiplier (how 
 NDefines.NAir.MIN_PLANE_COUNT_PARADROP=1
 NDefines.NAir.BASE_UNIT_WEIGHT_IN_TRANSPORT_PLANES=0
 NDefines.NAir.CARRIER_SIZE_STAT_INCREMENT = 100
-NDefines.NAir.AIR_INVASION_PREPARE_DAYS = 1						-- base days needed to prepare an airborne invasion
 
 
 --____________________________________________________________
@@ -149,10 +156,7 @@ NDefines.NAir.AIR_INVASION_PREPARE_DAYS = 1						-- base days needed to prepare 
 --____________________________________________________________
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 30
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.75
-NDefines.NNavy.NAVAL_INVASION_PREPARE_DAYS = 30								-- base days needed to prepare a naval invasion
-NDefines.NNavy.NAVAL_INVASION_PLAN_CAP = 2									-- base cap of naval invasions can be planned at the same time
-NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 6							-- base cap of divisions that can be assigned in a naval invasion
--- NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE=-1
+NDefines.NNavy.NAVAL_SUPREMACY_CAN_INVADE=-1
 
 --NResistance
 --____________________________________________________________
@@ -228,7 +232,6 @@ NDefines.NAI.CANCEL_COMBAT_DISADVANTAGE_RATIO = 1.5             -- If the enemy'
 NDefines.NAI.CANCEL_COMBAT_MIN_DURATION_HOURS = 48              -- Only allow cancelling (normal) combat if at least <value> hours have passed
 NDefines.NAI.CANCEL_INVASION_COMBAT_DISADVANTAGE_RATIO = 3.5    -- If the enemy's advantage ratio over us during invasion combat is more than <value>, allow canceling the attack
 NDefines.NAI.CANCEL_INVASION_COMBAT_MIN_DURATION_HOURS = 720    -- Only allow cancelling invasion combat if at least <value> hours have passed
-
 -- NDefines.NAI.AIR_WING_REINFORCEMENT_LIMIT = 1000
 --____________________________________________________________
 
@@ -238,4 +241,3 @@ NDefines.NRailwayGun.RAILWAY_GUN_POSSIBLE_RANGES = { 30, 15, 45 }	-- Possible va
 												-- For optimization reasons, they are listed here and equipment DB must use one of those.
 												-- when writing railway gun in equipment, use the index in this array
 												-- the first value in array is the default value
-						
