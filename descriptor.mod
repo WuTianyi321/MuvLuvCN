@@ -1,4 +1,4 @@
-version="0.3.1"
+version="0.3.2"
 replace_path="events"
 replace_path="common/ai_equipment"
 replace_path="common/ai_strategy_plans"
