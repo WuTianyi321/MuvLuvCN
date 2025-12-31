@@ -225,13 +225,13 @@ focus_tree = {
 				name = land_doctrine
 				cost_reduction = 0.55
 				uses = 1
-				category = land_doctrine
+				category = special_forces_doctrine
 			}
 			# add_tech_bonus = {
 			# 	name = land_doc_bonus
 			# 	bonus = 1.2
 			# 	uses = 1
-			# 	category = land_doctrine
+			# 	category = special_forces_doctrine
 			# }
 		}
 	}
@@ -295,7 +295,7 @@ focus_tree = {
 				name = "GEU focus bonus"
 				cost_reduction = 0.5
 				uses = 2
-				category = cat_superior_firepower
+				category = special_forces_doctrine#cat_superior_firepower
 			}
 		}
 	}
@@ -755,7 +755,7 @@ focus_tree = {
 				name = "GEU focus bonus"
 				cost_reduction = 0.5
 				uses = 3
-				category = cat_grand_battle_plan
+				category = special_forces_doctrine#cat_grand_battle_plan
 			}
 		}
 	}
@@ -796,12 +796,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.5
-				uses = 2
-				category = air_doctrine
-			}
+			add_ideas = UNI_IC_shell_cost
 		}
 	}
 	focus = {
@@ -823,7 +818,7 @@ focus_tree = {
 				name = land_doc_bonus
 				cost_reduction = 0.3
 				uses = 3
-				category = cat_grand_battle_plan
+				category = special_forces_doctrine#cat_grand_battle_plan
 			}
 		}
 	}
@@ -1279,13 +1274,13 @@ focus_tree = {
 				name = land_doctrine
 				cost_reduction = 0.5
 				uses = 3
-				category = land_doctrine
+				category = special_forces_doctrine
 			}
 			# add_tech_bonus = {
 			# 	name = land_doc_bonus
 			# 	bonus = 0.5
 			# 	uses = 3
-			# 	category = land_doctrine
+			# 	category = special_forces_doctrine
 			# }
 		}
 	}

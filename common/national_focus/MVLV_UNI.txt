@@ -892,7 +892,7 @@ focus_tree = {
 				name = land_doctrine
 				cost_reduction = 0.5
 				uses = 1
-				category = land_doctrine
+				category = special_forces_doctrine
 			}
 			AFR = {
 				add_ideas = UNI_counterattack_start
@@ -3072,7 +3072,7 @@ focus_tree = {
 				name = land_doctrine
 				cost_reduction = 0.4
 				uses = 3
-				category = land_doctrine
+				category = special_forces_doctrine
 			}
 			add_opinion_modifier = {
 				target = USA

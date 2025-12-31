@@ -333,7 +333,7 @@ focus_tree = {
 				name = land_doctrine
 				cost_reduction = 0.8
 				uses = 3
-				category = land_doctrine
+				category = special_forces_doctrine
 			}
 			466 = {
 				add_extra_state_shared_building_slots = 10

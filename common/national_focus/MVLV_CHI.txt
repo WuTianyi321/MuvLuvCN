@@ -476,12 +476,12 @@ focus_tree = {
 				name = land_doctrine
 				cost_reduction = 0.5
 				uses = 2
-				category = land_doctrine
+				category = special_forces_doctrine
 			}
 			# add_tech_bonus = {
 			# 	bonus = 1
 			# 	uses = 2
-			# 	category = land_doctrine
+			# 	category = special_forces_doctrine
 			# }
 			add_tech_bonus = {
 				name = "CHI focus bonus"
@@ -594,12 +594,12 @@ focus_tree = {
 				name = land_doctrine
 				cost_reduction = 0.5
 				uses = 4
-				category = land_doctrine
+				category = special_forces_doctrine
 			}
 			# add_tech_bonus = {
 			# 	bonus = 1
 			# 	uses = 4
-			# 	category = land_doctrine
+			# 	category = special_forces_doctrine
 			# }
 			add_tech_bonus = {
 				name = "CHI focus name"

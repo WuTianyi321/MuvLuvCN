@@ -275,7 +275,7 @@ shared_focus = {
 			name = land_doctrine
 			cost_reduction = 0.33
 			uses = 5
-			category = land_doctrine
+			category = special_forces_doctrine
 		}
 	}
 	ai_will_do = {
